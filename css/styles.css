@@ -1,0 +1,31 @@
+#features{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+
+
+
+}
+.feature-box{
+
+    width: 25%;
+    margin: 15px;
+    padding: 15px;
+
+}
+
+.feature-box__heading
+{
+    text-align: center;
+}
+.feature-box__about{
+    text-align: justify;
+    margin-top: 30px;
+}
+
+.feature-box__icon{
+    object-fit: cover;
+    width: 60%;
+    margin: auto;
+
+}
