@@ -2,6 +2,8 @@
     margin: auto;
     display: flex;
     flex-direction: row;
+    max-width: 1280px;
+
 
 
 
@@ -13,6 +15,12 @@
     padding: 15px;
 
 }
+
+/*.feature-box:hover{
+
+    border: black 1px solid;
+
+} */
 
 .feature-box__heading
 {
