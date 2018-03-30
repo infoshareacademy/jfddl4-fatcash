@@ -11,7 +11,7 @@
 
 }
 
-.main-nav_logo {
+.main-nav__logo {
 
 }
 
@@ -19,17 +19,17 @@
     width: 60px;
 }
 
-.main-nav_list {
+.main-nav__list {
     margin-right: 20px;
     list-style: none;
 
 }
 
-.main-nav_list > li {
+.main-nav__list > li {
     display: inline;
 }
 
-.main-nav_btn {
+.main-nav__btn {
     border: 1px solid black;
     border-radius: 5px;
     padding: 5px;
@@ -39,7 +39,7 @@
     transition: background-color 0.7s, color 0.7s;
 }
 
-.main-nav_btn:hover {
+.main-nav__btn:hover {
     background-color: black;
     color: white;
 }
