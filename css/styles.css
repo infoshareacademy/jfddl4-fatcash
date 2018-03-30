@@ -1,17 +1,32 @@
-.section {
-  background-color: white;
+section#features {
+  max-width: 1280px;
+  margin: 0 auto;
   width: 100%;
 }
 
-.container {
+.features__row {
   display: flex;
-  flex-direction: column;
-
 }
 
-.container__items { list-style: none;
-                  }
+.features__row-reversed {
+  flex-direction: row-reverse;
+  // TODO disable this on smaller screenss by media querry
+}
 
-.container__image { border: 2px;
+.features__col.features__col-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
-                  }
+.features__col.features__col-txt{
+  padding: 3em;
+}
+
+.features__col{
+  width: 50%;
+}
+
+.background-img-1{
+  background-image: url("../img/7937.jpg");
+}
