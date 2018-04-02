@@ -1,22 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:500');
 
+body {
+    font-family: "Oswald", sans-serif;
+    font-size: 0.8em;
+    color: #1e1b30;
+}
 
 .main-nav {
-    background-color: #1fff20;
+    background-color: rgba(110, 104, 128, 0.13);
     position: fixed;
     top: 0;
     width: 100%;
     left: 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
 }
 
 .main-nav__logo {
-
+margin: 12px 0px 6px 40px;
 }
 
 #logo {
-    width: 60px;
+    width: 45px;
 }
 
 .main-nav__list {
@@ -30,16 +37,29 @@
 }
 
 .main-nav__btn {
+    /*
     border: 1px solid black;
     border-radius: 5px;
-    padding: 5px;
+    */
+    letter-spacing:1px;
+    padding: 0px 15px 5px 5px;
     margin-right: 5px;
     text-decoration: none;
-    color: black;
-    transition: background-color 0.7s, color 0.7s;
+    color: #1e1b30;
+   /* transition: background-color 0.7s, color 0.7s; */
 }
 
 .main-nav__btn:hover {
-    background-color: black;
+
+    background-color: #1e1b30;
     color: white;
+
+}
+
+
+@media only screen and (max-width: 650px) {
+    .main-nav__btn {
+        color: red;
+    }
+
 }
