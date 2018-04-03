@@ -1,68 +1,83 @@
 section#features {
-  max-width: 1280px;
+  max-width: 960px;
   margin: 0 auto;
   width: 100%;
-  border: 2px solid black ;
+  height: auto;
+  border: 2px solid black;
   border-radius: 5px;
   background-color: #51c5c9;
 
+
 }
 
-.features__row {
-  display: flex;
+.main-content {
+
+  display:flex;
+  flex-direction: column;
 }
 
-.features__row-reversed {
+.main-column1 {
+
+  display:flex;
+  flex-direction:row;
+
+
+}
+
+.main-column2 {
+
+  display:flex;
   flex-direction: row-reverse;
-  // TODO disable this on smaller screenss by media querry
+
+
 }
 
-.features__col.features__col-img {
+.main-column3 {
+
+  display:flex;
+  flex-direction: row;
+
+}
+
+.main-column-txt1 {
+  width:50%;
+  list-style-type: none;
+
+}
+
+.main-column-txt2 {
+  width:50%;
+  list-style-type: none;
+}
+
+.main-column-txt3 {
+  width:50%;
+  list-style-type: none;
+}
+
+.main-column-image1 {
+  width:50%;
+  background-image: url("../img/unsplas1.jpg");
+  background-repeat:no-repeat;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: left;
+  background-position: center;
 }
 
-.features__col.features__col-txt{
-  padding: 5%;
-}
-
-.features__col{
-  width: 50%;
-}
-
-.background-img-1{
+.main-column-image2 {
+  width:50%;
   background-image: url("../img/unsplash.jpg");
-  border: 1px solid black;    
-}
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center;
 
-.background-img-2{
+}
+.main-column-image3 {
+  width:50%;
   background-image: url("../img/unsplash1.jpg");
-  border: 1px solid black;    
-}
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center;
 
 
-.features__col_features__col-txt-h2
-{ font-family: helvetica;
-  font-size: 14px; 
-    
-    
 }
 
-.features__col-features__col-txt-ul
-
-{
-    font-family: helvetica;
-    font-size: 12px;
-    list-style:none;
-    padding:10px 30%px 0px 0px;
-    text-align: left;
-}
-.features__col-features__col-txt-ul2
-{
-    font-family: helvetica;
-    font-size: 12px;
-    list-style:none;
-    padding:10px 30% 0px 0px;
-    text-align-last: left;
-}
