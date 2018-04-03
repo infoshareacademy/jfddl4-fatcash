@@ -3,9 +3,11 @@ section#features {
   margin: 0 auto;
   width: 100%;
   height: auto;
-  border: 2px solid black;
+  border: 1px solid black;
   border-radius: 5px;
-  background-color: #51c5c9;
+  border-style: groove;    
+  background-color: lightgray;
+ 
 
 
 }
@@ -41,18 +43,65 @@ section#features {
 
 .main-column-txt1 {
   width:50%;
-  list-style-type: none;
-
+  list-style-type: none; 
+  position: relative; 
+  background-image:linear-gradient(to bottom, white , #EEECED);    
 }
+
+.main-column-txt1::before{
+    content: "";
+    display: block;
+    width: 5%;
+    height: 5em;
+    position: absolute;
+    top: 1em;
+    left: 0;
+    background-color: #747577;}
+    
+
 
 .main-column-txt2 {
   width:50%;
   list-style-type: none;
+  position:relative;
+  background-color: #EEECED;   
+          
+      
 }
+.main-column-txt2::before{
+    content: "";
+    display: block;
+    width: 5%;
+    height: 5em;
+    position: absolute;
+    top: 1em;
+    left: 0;
+    background-color: #747577;}
+    
+    
+
 
 .main-column-txt3 {
   width:50%;
   list-style-type: none;
+  position:relative;
+  background-image:linear-gradient(to top, white , 	#ECECEC);  
+  
+}
+
+.main-column-txt3::before{
+    content: "";
+    display: block;
+    width: 5%;
+    height: 5em;
+    position: absolute;
+    top: 1em;
+    left: 0;
+    background-color: #747577;
+   }
+
+.main-column-txt1, .main-column-txt2, .main-column-txt3, li{
+  list-style-type: none;   
 }
 
 .main-column-image1 {
@@ -61,23 +110,48 @@ section#features {
   background-repeat:no-repeat;
   background-size: cover;
   background-position: center;
+  animation-name: column-image1-anim;   
+  animation-duration: 10s; 
+  animation-iteration-count:infinite; 
+  animation-direction:alternate; 
 }
 
+@keyframes column-image1-anim {
+    from {background-image: url("../img/unsplas1.jpg");}
+    to {background-image: url("../img/animplash1.jpg");}
+
+}
 .main-column-image2 {
   width:50%;
   background-image: url("../img/unsplash.jpg");
   background-repeat:no-repeat;
   background-size: cover;
   background-position: center;
-
+  animation-name: column-image1-anim2;   
+  animation-duration: 10s;  
+  animation-iteration-count:infinite; 
+  animation-direction:alternate;  
 }
+@keyframes column-image1-anim2 {
+    from {background-image: url("../img/unsplash.jpg");}
+    to {background-image: url("../img/animplash2.jpg");}
+}
+
+
+
 .main-column-image3 {
   width:50%;
   background-image: url("../img/unsplash1.jpg");
   background-repeat:no-repeat;
   background-size: cover;
   background-position: center;
-
-
+  animation-name: column-image1-anim3;   
+  animation-duration: 10s; 
+  animation-iteration-count:infinite;
+  animation-direction:alternate;
 }
 
+@keyframes column-image1-anim3 {
+    from {background-image: url("../img/unsplash1.jpg");}
+    to {background-image: url("../img/animplash3.jpg");}
+}
