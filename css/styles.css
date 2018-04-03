@@ -1,4 +1,5 @@
 
+
 body {
     margin: 0;
     font-family: 'Oswald', sans-serif;
@@ -81,3 +82,49 @@ body {
     text-align: center;
 
 }
+
+
+.main-nav {
+    background-color: #1fff20;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.main-nav__logo {
+
+}
+
+#logo {
+    width: 60px;
+}
+
+.main-nav__list {
+    margin-right: 20px;
+    list-style: none;
+
+}
+
+.main-nav__list > li {
+    display: inline;
+}
+
+.main-nav__btn {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.7s, color 0.7s;
+}
+
+.main-nav__btn:hover {
+    background-color: black;
+    color: white;
+}
+
