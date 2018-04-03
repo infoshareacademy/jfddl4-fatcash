@@ -3,7 +3,9 @@ section#features {
   margin: 0 auto;
   width: 100%;
   border: 2px solid black ;
-  border-radius: 5px;    
+  border-radius: 5px;
+  background-color: #51c5c9;
+
 }
 
 .features__row {
