@@ -8,8 +8,9 @@
 .team-box {
 
     width: 85%;
-    margin: 15px;
-    padding: 15px;
+    margin: 5%;
+    padding: 5%;
+
 
 }
 
@@ -49,6 +50,7 @@
     height: 20%;
 
 
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -63,8 +65,8 @@
     .team-box{
 
         width: 25%;
-        margin: 15px;
-        padding: 15px;
+        margin: 1%;
+        padding: 1%;
 
     }
 }
