@@ -1,6 +1,7 @@
 
 body {
     margin: 0;
+    font-family: 'Oswald', sans-serif;
 
 }
 
@@ -13,37 +14,37 @@ body {
     background-size: cover;
     background-position: initial;
     filter: brightness(70%);
-    letter-spacing: 5px;
-    margin-top: 50px;
+    letter-spacing: 0.5em;
+    margin-top: 5em;
     color: black;
 
 }
 
-.hero__h1 {
+.hero__header--h1 {
 
     text-align: center;
-    font-size: 80px;
+    font-size: 6em;
     padding: 0;
     margin: 0;
-    line-height: 340px;
+    line-height:3em;
     filter: brightness(100%);
+
 
 }
 
-.wrapper__h {
+.hero__header-wrapper__h {
 
     margin-left: auto;
     margin-right: auto;
-    border-radius: 30px;
+    border-radius: 2em;
 
 }
 
 .hero__button {
-    width: 250px;
-    height: 70px;
+    width: 10em;
     background-color: #cccccc;
     text-align: center;
-    padding: 20px;
+    padding:2.5em 2em;
     box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
@@ -51,7 +52,9 @@ body {
     opacity: 0.9;
     border-radius: 30px;
     transition: 0.5s;
-    font-size: 20px;
+    font-size: 1.5em;
+    line-height: 10%;
+
 }
 
 .hero__button:hover {
@@ -61,7 +64,7 @@ body {
 
 }
 
-.hero__button__link {
+.hero__button-link {
 
     text-decoration: none;
     color: black;
@@ -69,7 +72,7 @@ body {
 }
 
 .hero__h2 {
-    font-size: 30px;
+    font-size: 1.8em;
     text-align: center;
 
 }
