@@ -1,3 +1,4 @@
+
 #team {
     margin: auto;
     padding: auto;
@@ -74,6 +75,7 @@
     }
 }
 
+
 #features {
     margin: auto;
     padding: auto;
@@ -131,5 +133,138 @@
 .team-features__heading{
     text-align: center;
     font-size: 2em;
+}
+
+
+
+
+body {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
 
 }
+
+.hero {
+
+    background-image: url("../img/hero2.jpg");
+    background-color: dodgerblue;
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(70%);
+    letter-spacing: 0.5em;
+    margin-top: 5em;
+    color: black;
+    max-width: 100%;
+    min-width: 100%;
+
+
+
+
+}
+
+.hero__header--h1 {
+
+    text-align: center;
+    font-size: 6em;
+    padding: 0;
+    margin: 0;
+    line-height:3em;
+    filter: brightness(100%);
+
+
+}
+
+.hero__header-wrapper__h {
+
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2em;
+
+}
+
+.hero__button {
+    width: 10em;
+    background-color: #cccccc;
+    text-align: center;
+    padding:2.5em 2em;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5em;
+    opacity: 0.9;
+    border-radius:5%;
+    transition: 0.5s;
+    font-size: 1.5em;
+    line-height: 10%;
+
+}
+
+.hero__button:hover {
+
+    filter: brightness(90%);
+    cursor: pointer;
+
+}
+
+.hero__button-link {
+
+    text-decoration: none;
+    color: black;
+
+}
+
+.hero__h2 {
+    font-size: 1.8em;
+    text-align: center;
+
+}
+
+
+.main-nav {
+    background-color: #1fff20;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.main-nav__logo {
+
+}
+
+#logo {
+    width: 60px;
+}
+
+.main-nav__list {
+    margin-right: 20px;
+    list-style: none;
+
+}
+
+.main-nav__list > li {
+    display: inline;
+}
+
+.main-nav__btn {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.7s, color 0.7s;
+}
+
+.main-nav__btn:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
