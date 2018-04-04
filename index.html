@@ -6,25 +6,69 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
+    <!--
+    <script>
+        $(document).ready(function () {
+            $('a[href^="#"]').on('click', function (e) {
+                e.preventDefault();
+
+                var target = this.hash;
+                var $target = $(target);
+
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top
+                }, 900, 'swing', function () {
+                    window.location.hash = target;
+                });
+            });
+        });
+
+        $('label#menuText').click(function () {
+            $('.cmn-toggle-switch').toggleClass('active');
+            console.log('nav-toggled');
+        });
+    </script>
+-->
 </head>
 <body>
 
 <!-- MENU -->
-  <nav class="main-nav">
+  <nav class="main-nav-desktop">
       <a href="" class="main-nav__logo">
-          <img id="logo" src="img/wallet01.png" alt="FatCash logo">
+          <img id="main-nav__logo-img" src="img/wallet01.png" alt="FatCash logo">
       </a>
-      <ul class="main-nav__list">
-          <li><a href="#hero" class="main-nav__btn">FAT CASH</a></li>
-          <li><a href="#features" class="main-nav__btn">FUNCTIONS</a></li>
-          <li><a href="#content" class="main-nav__btn">MORE</a></li>
-          <li><a href="#team" class="main-nav__btn">TEAM</a></li>
-          <li><a href="#signup" class="main-nav__btn">SIGN UP</a></li>
-          <li><a href="#content" class="main-nav__btn">CONTACT</a></li>
+      <ul class="main-nav-desktop__list">
+          <li><a href="#hero" class="main-nav-desktop__list-btn">FAT CASH</a></li>
+          <li><a href="#features" class="main-nav-desktop__list-btn">FUNCTIONS</a></li>
+          <li><a href="#content" class="main-nav-desktop__list-btn">MORE</a></li>
+          <li><a href="#team" class="main-nav-desktop__list-btn">TEAM</a></li>
+          <li><a href="#signup" class="main-nav-desktop__list-btn">SIGN UP</a></li>
+          <li><a href="#content" class="main-nav-desktop__list-btn">CONTACT</a></li>
       </ul>
-
-
   </nav>
+
+
+<div class="main-nav-mobile">
+    <input type="checkbox" id="nav-trigger" class="nav-trigger">
+    <label id="menuText" class="uppercase noselect" for="nav-trigger">menu
+        <a class="cmn-toggle-switch cmn-toggle-switch__htx">
+            <span></span>
+        </a>
+    </label>
+    <div class="slide-menu">
+        <ul>
+            <li class="selected"><a href="#hero">FAT CASH</a></li>
+            <li><a href="#features">FUNCTIONS</a></li>
+            <li><a href="#content">MORE</a></li>
+            <li><a href="#team">TEAM</a></li>
+            <li><a href="#signup">SIGN UP</a></li>
+            <li><a href="#content">CONTACT</a></li>
+        </ul>
+
+    </div>
+</div>
+
+
 <!-- /MENU -->
 
 <!-- HERO -->
