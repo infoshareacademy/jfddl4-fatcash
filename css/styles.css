@@ -1,9 +1,225 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:500');
 
+
 body {
     font-family: "Oswald", sans-serif;
     font-size: 0.8em;
     color: #1e1b30;
+
+#team {
+    margin: auto;
+    padding: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.team-box {
+
+    width: 85%;
+    margin: 5%;
+    padding: 5%;
+
+
+}
+
+
+.team-box__heading
+{
+    text-align: center;
+    font-size: 1.5em;
+    margin 10%;
+
+}
+.team-box__about{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.5em;
+}
+
+.team-box__photo{
+    width: 60%;
+    margin: auto;
+}
+.team-box__photo img{
+    border-radius: 30%;
+    width: 100%;
+    text-align: center;
+}
+
+.team-box__links{
+    display: flex;
+    flex-direction: row;
+    margin: 10%;
+    justify-content: space-around;
+
+
+}
+
+.team-box__links a {
+    width: 20%;
+    height: 20%;
+}
+.team-box__links img{
+    width: 100%;
+    height: auto;
+
+}
+@media only screen and (min-width: 768px) {
+    #team{
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        max-width: 1280px;
+
+
+    }
+    .team-box{
+
+        width: 25%;
+        margin: 1%;
+        padding: 1%;
+
+    }
+}
+
+
+#features {
+    margin: auto;
+    padding: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-box {
+
+    width: 85%;
+    margin: 5%;
+    padding: 5%;
+}
+
+
+
+
+.feature-box__heading
+{
+    text-align: center;
+}
+.feature-box__about{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.5em;
+}
+
+.feature-box__icon{
+    object-fit: cover;
+    width: 60%;
+    margin: auto;
+
+}
+
+
+@media only screen and (min-width: 768px) {
+    #features{
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        max-width: 1280px;
+
+
+
+
+    }
+    .feature-box{
+
+        width: 25%;
+        margin: 1%;
+        padding: 1%;
+
+    }
+}
+.team-features__heading{
+    text-align: center;
+    font-size: 2em;
+}
+
+
+.hero {
+
+    background-image: url("../img/hero2.jpg");
+    background-color: dodgerblue;
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(70%);
+    letter-spacing: 0.5em;
+    margin-top: 5em;
+    color: black;
+    max-width: 100%;
+    min-width: 100%;
+
+
+
+
+}
+
+.hero__header--h1 {
+
+    text-align: center;
+    font-size: 6em;
+    padding: 0;
+    margin: 0;
+    line-height:3em;
+    filter: brightness(100%);
+
+
+}
+
+.hero__header-wrapper__h {
+
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2em;
+
+}
+
+.hero__button {
+    width: 10em;
+    background-color: #cccccc;
+    text-align: center;
+    padding:2.5em 2em;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5em;
+    opacity: 0.9;
+    border-radius:5%;
+    transition: 0.5s;
+    font-size: 1.5em;
+    line-height: 10%;
+
+}
+
+.hero__button:hover {
+
+    filter: brightness(90%);
+    cursor: pointer;
+
+}
+
+.hero__button-link {
+
+    text-decoration: none;
+    color: black;
+
+}
+
+.hero__h2 {
+    font-size: 1.8em;
+    text-align: center;
+
+}
+
 
 }
 
@@ -392,3 +608,6 @@ label[for="nav-trigger"]:hover {
         visibility: visible !important;
     }
 }
+
+
+
