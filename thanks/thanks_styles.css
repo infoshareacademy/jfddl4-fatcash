@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:500');
+
+body {
+    font-family: "Oswald", sans-serif;
+    font-size: 0.8em;
+    color: #1e1b30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.thanksbox {
+    position: fixed;
+    margin-left: auto;
+    margin-top: 50vh
+
+}
+
+.back_btn {
+    /*
+    border: 1px solid black;
+    border-radius: 5px;
+    */
+    letter-spacing: 1px;
+    padding: 0px 15px 5px 5px;
+    margin-right: 5px;
+    text-decoration: none;
+    background-color: #1e1b30;
+    color: white;
+
+    /* transition: background-color 0.7s, color 0.7s; */
+}
+
+}

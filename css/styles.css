@@ -1,3 +1,60 @@
+
+#signup {
+
+}
+
+.signup__div {
+    margin: auto;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(146, 143, 160, 0.64);
+    text-align: center;
+
+}
+
+.signup__div > h1 {
+    color: #1e1b30;
+    width: 100%;
+}
+
+.signup__div > p {
+    width: 50%;
+    text-align: justify;
+    color: #1e1b30;
+}
+
+form {
+    width: 100%;
+}
+
+input[type=text] {
+    width: 38%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: #1e1b30;
+    color: white;
+}
+
+input[type=submit] {
+    background-color: #1e1b30;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px 15px 2px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    input[type=text] {
+        width: 100%;
+    }
+}
+
 @import url('https://fonts.googleapis.com/css?family=Oswald:500');
 
 
@@ -608,6 +665,7 @@ label[for="nav-trigger"]:hover {
         visibility: visible !important;
     }
 }
+
 
 
 

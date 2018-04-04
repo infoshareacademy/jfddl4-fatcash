@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+
     <title>Document</title>
 
 
@@ -17,6 +19,7 @@
 
 
 <!-- MENU -->
+
 
   <nav class="main-nav-desktop">
 
@@ -204,6 +207,21 @@
 
 <!-- SIGNUP -->
 <section id="signup"></section>
+
+<div class="signup__div">
+    <h1>Sign up for app premiere</h1>
+    <p> lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+
+    <form action="https://emaillabs-sender.herokuapp.com/" method="POST">
+        <input type="text" name="emails[]" placeholder="Write your email...">
+        <input type="hidden" name="subject" value="Tytuł">
+        <input type="hidden" name="message" value="Treść">
+        <input type="hidden" name="from" value="contact@fatcash.com">
+        <input type="hidden" name="fromName" value="Nazwa Apki">
+        <input type="hidden" name="redirect" value="http://www.fatcash.jfddl4.is-academy.pl/thanks">
+        <input class="button" type="submit" value="SEND">
+    </form>
+</div>
 <!-- /SIGNUP -->
 
 <!-- CONTACT -->
