@@ -530,13 +530,13 @@ label[for="nav-trigger"]:hover {
 }
 
 section#info {
-  max-width: 960px;
+  max-width: 1280px;
   margin: 0 auto;
   width: 100%;
   height: auto;
   //border: 1px solid black;
   border-radius: 5px;
-  background-color: lightgray;
+  background-color: white;
   text-align: left;
  
 
@@ -765,11 +765,6 @@ section#info {
 
 
 
-
-
-
-
-
 #signup {
 
 }
@@ -826,4 +821,43 @@ input[type=submit] {
     }
 }
 
+.container {margin-top: 2rem;
+            margin-bottom:2rem;
+
+          }
+ul {   list-style-type: none;}
+
+ul::before {
+    content: "";
+    display: block;
+    width: 2%;
+    height: 5em;
+    position: absolute;
+    top: 1em;
+    left: 0;
+    background-color: green;
+
+
+.card-img-top {
+    width: 100%;
+    border-top-left-radius:0px;
+    border-top-right-radius:0px;
+  }
+  .card {
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      min-width: 0;
+      word-wrap: break-word;
+      background-color: #fff;
+      background-clip: border-box;
+      border: 0px solid rgba(0,0,0,.125);
+      border-radius: 0rem;
+  }
+ul>li{margin-bottom: 1rem; }
 
