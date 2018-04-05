@@ -4,21 +4,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/styles.css">
+      <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
     <title>Document</title>
+
 </head>
 <body>
 
 
+<!-- MENU -->
+
+
+  <nav class="main-nav-desktop">
+
+      <a href="" class="main-nav__logo">
+          <img id="main-nav__logo-img" src="img/wallet01.png" alt="FatCash logo">
+      </a>
+      <ul class="main-nav-desktop__list">
+          <li><a href="#hero" class="main-nav-desktop__list-btn">FAT CASH</a></li>
+          <li><a href="#features" class="main-nav-desktop__list-btn">FUNCTIONS</a></li>
+          <li><a href="#content" class="main-nav-desktop__list-btn">MORE</a></li>
+          <li><a href="#team" class="main-nav-desktop__list-btn">TEAM</a></li>
+          <li><a href="#signup" class="main-nav-desktop__list-btn">SIGN UP</a></li>
+          <li><a href="#content" class="main-nav-desktop__list-btn">CONTACT</a></li>
+      </ul>
+  </nav>
+
+
+<div class="main-nav-mobile">
+    <input type="checkbox" id="nav-trigger" class="nav-trigger">
+    <label id="menuText" class="uppercase noselect" for="nav-trigger">menu
+        <a class="cmn-toggle-switch cmn-toggle-switch__htx">
+            <span></span>
+        </a>
+    </label>
+    <div class="slide-menu">
+        <ul>
+            <li class="selected"><a href="#hero">FAT CASH</a></li>
+            <li><a href="#features">FUNCTIONS</a></li>
+            <li><a href="#content">MORE</a></li>
+            <li><a href="#team">TEAM</a></li>
+            <li><a href="#signup">SIGN UP</a></li>
+            <li><a href="#content">CONTACT</a></li>
+        </ul>
+
+    </div>
+</div>
+
+
+
+<!-- /MENU -->
+
+
+<!-- HERO -->
+
+<header>
+
+    <div class="hero" id="heronav">
+
+        <div class="hero__header-wrapper__h">
+            <h1 class="hero__header--h1"> Fatcash</h1>
+            <h2 class="hero__h2">Made by people for the people <br><br>
+                Welcome to Fatcash
+            </h2>
+        </div>
+
+        <div class="hero__button"><a href="#" class="hero__button-link">Click</a></div>
+
+
+    </div>
+
+</header>
+
+<!-- /HERO -->
+
+<!-- FEATURES-->
+<h2 class="team-features__heading">FEATURES</h2>
+<section id="features">
+
+    <div class="feature-box">
+        <h3 class="feature-box__heading">FEATURE</h3>
+        <div class="feature-box__icon">
+            <img src="img/home.svg">
+        </div>
+        <div class="feature-box__about">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </div>
+    </div>
+    <div class="feature-box">
+        <h3 class="feature-box__heading">FEATURE</h3>
+        <div class="feature-box__icon">
+            <img src="img/user.svg">
+        </div>
+        <div class="feature-box__about">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </div>
+    </div>
+    <div class="feature-box">
+        <h3 class="feature-box__heading">FEATURE</h3>
+        <div class="feature-box__icon">
+            <img src="img/statistic.svg">
+        </div>
+        <div class="feature-box__about">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </div>
+    </div>
+    <div class="feature-box">
+        <h3 class="feature-box__heading">FEATURE</h3>
+        <div class="feature-box__icon">
+            <img src="img/money.svg">
+        </div>
+        <div class="feature-box__about">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </div>
+    </div>
+
+
+</section>
+<!-- /FEATURES-->
+
+  <!-- INFO-->
 <section id="info">
-
-
     <div class="main-content">
-
-
         <div class="main-column1">
-
-            <div class="main-column-txt1">
+           <div class="main-column-txt1">
                 <ul>
                     <li><strong>Lista funkcjonalność aplikacji webowej</strong></li>
                     <li>Opis funkcjonalność aplikacji webowej Drogi Marszałku, Wysoka Izbo. PKB rośnie. Z pełną
@@ -128,6 +238,103 @@
 
 
 </section>
+  <!-- /INFO-->
+
+<!-- TEAM -->
+<h2 class="team-features__heading">OUR TEAM</h2>
+<section id="team">
+
+    <div class="team-box">
+
+        <div class="team-box__photo">
+            <img src="img/Jan.jpg">
+        </div>
+        <h3 class="team-box__heading">Jan Choma</h3>
+        <div class="team-box__links">
+            <a href="http://www.facebook.pl"><img src="img/facebook-app-logo.svg"></a>
+            <a href="http://www.facebook.pl"><img src="img/internet.svg"></a>
+        </div>
+        <div class="team-box__about">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </div>
+
+
+    </div>
+
+    <div class="team-box">
+
+        <div class="team-box__photo">
+            <img src="img/PawelP.jpg">
+        </div>
+        <h3 class="team-box__heading">Paweł Polit</h3>
+        <div class="team-box__links">
+            <a href="http://www.facebook.pl"><img src="img/facebook-app-logo.svg"></a>
+            <a href="http://www.facebook.pl"><img src="img/internet.svg"></a>
+        </div>
+        <div class="team-box__about">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </div>
+
+
+    </div>
+    <div class="team-box">
+
+        <div class="team-box__photo">
+            <img src="img/Artur.jpg">
+        </div>
+        <h3 class="team-box__heading">Artur Miłkowski</h3>
+        <div class="team-box__links">
+            <a href="http://www.facebook.pl"><img src="img/facebook-app-logo.svg"></a>
+            <a href="http://www.facebook.pl"><img src="img/internet.svg"></a>
+        </div>
+        <div class="team-box__about">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </div>
+
+
+    </div>
+    <div class="team-box">
+
+        <div class="team-box__photo">
+            <img src="img/PawelT.jpg">
+        </div>
+        <h3 class="team-box__heading">Paweł Tarka</h3>
+        <div class="team-box__links">
+            <a href="http://www.facebook.pl"><img src="img/facebook-app-logo.svg"></a>
+            <a href="http://www.facebook.pl"><img src="img/internet.svg"></a>
+        </div>
+        <div class="team-box__about">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </div>
+
+
+    </div>
+</section>
+<!-- /TEAM -->
+
+<!-- SIGNUP -->
+<section id="signup"></section>
+
+<div class="signup__div">
+    <h1>Sign up for app premiere</h1>
+    <p> lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+
+    <form action="https://emaillabs-sender.herokuapp.com/" method="POST">
+        <input type="text" name="emails[]" placeholder="Write your email...">
+        <input type="hidden" name="subject" value="Tytuł">
+        <input type="hidden" name="message" value="Treść">
+        <input type="hidden" name="from" value="contact@fatcash.com">
+        <input type="hidden" name="fromName" value="Nazwa Apki">
+        <input type="hidden" name="redirect" value="http://www.fatcash.jfddl4.is-academy.pl/thanks">
+        <input class="button" type="submit" value="SEND">
+    </form>
+</div>
+<!-- /SIGNUP -->
+
+
 
 </body>
 </html>
+
+
+
