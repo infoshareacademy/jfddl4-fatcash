@@ -529,164 +529,45 @@ label[for="nav-trigger"]:hover {
     font-size: 2em;
 }
 
-section#info {
-  max-width: 1280px;
-  margin: 0 auto;
-  width: 100%;
-  height: auto;
-  //border: 1px solid black;
-  border-radius: 5px;
-  background-color: white;
-  text-align: left;
- 
-
+.container {margin-top: 2rem;
+    margin-bottom:2rem;
 
 }
+/*ul {   list-style-type: none;}
 
-.main-content {
-
-  display:flex;
-  flex-direction: column;
-}
-
-.main-column1 {
-
-  display:flex;
-  flex-direction:row;
-  flex-wrap: wrap
-
-}
-
-.main-column2 {
-
-  display:flex;
-  flex-direction: row-reverse;
-
-
-}
-
-.main-column3 {
-
-  display:flex;
-  flex-direction: row;
-  flex-wrap: wrap
-}
-
-.main-column-txt1 {
-  width:50%;
-  list-style-type: none; 
-  position: relative; 
-  background-image:linear-gradient(to bottom, white , #EEECED);    
-}
-
-.main-column-txt1::before{
+/*ul::before {
     content: "";
     display: block;
-    width: 5%;
+    width: 2%;
     height: 5em;
     position: absolute;
     top: 1em;
     left: 0;
-    background-color: #747577;}
-    
+    background-color: green;*/
 
 
-.main-column-txt2 {
-  width:50%;
-  list-style-type: none;
-  position:relative;
-  background-color: #EEECED;   
-          
-      
+.card-img-top {
+    width: 100%;
+    border-top-left-radius:0px;
+    border-top-right-radius:0px;
 }
-.main-column-txt2::before{
-    content: "";
-    display: block;
-    width: 5%;
-    height: 5em;
-    position: absolute;
-    top: 1em;
-    left: 0;
-    background-color: #747577;}
-    
-    
-
-
-.main-column-txt3 {
-  width:50%;
-  list-style-type: none;
-  position:relative;
-  background-image:linear-gradient(to top, white , 	#ECECEC);  
-  
+.card {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0px solid rgba(0,0,0,.125);
+    border-radius: 0rem;
 }
-
-.main-column-txt3::before{
-    content: "";
-    display: block;
-    width: 5%;
-    height: 5em;
-    position: absolute;
-    top: 1em;
-    left: 0;
-    background-color: #747577;
-   }
-
-.main-column-txt1, .main-column-txt2, .main-column-txt3, li{
-  list-style-type: none;   
-}
-
-.main-column-image1 {
-  width:50%;
-  background-image: url("../img/unsplas1.jpg");
-  background-repeat:no-repeat;
-  background-size: cover;
-  background-position: center;
-  animation-name: column-image1-anim;   
-  animation-duration: 10s; 
-  animation-iteration-count:infinite; 
-  animation-direction:alternate; 
-}
-
-@keyframes column-image1-anim {
-    from {background-image: url("../img/unsplas1.jpg");}
-    to {background-image: url("../img/animplash1.jpg");}
-
-}
-.main-column-image2 {
-  width:50%;
-  background-image: url("../img/unsplash.jpg");
-  background-repeat:no-repeat;
-  background-size: cover;
-  background-position: center;
-  animation-name: column-image1-anim2;   
-  animation-duration: 10s;  
-  animation-iteration-count:infinite; 
-  animation-direction:alternate;  
-}
-@keyframes column-image1-anim2 {
-    from {background-image: url("../img/unsplash.jpg");}
-    to {background-image: url("../img/animplash2.jpg");}
-}
-
-
-
-.main-column-image3 {
-  width:50%;
-  background-image: url("../img/unsplash1.jpg");
-  background-repeat:no-repeat;
-  background-size: cover;
-  background-position: center;
-  animation-name: column-image1-anim3;   
-  animation-duration: 10s; 
-  animation-iteration-count:infinite;
-  animation-direction:alternate;
-}
-
-@keyframes column-image1-anim3 {
-    from {background-image: url("../img/unsplash1.jpg");}
-    to {background-image: url("../img/animplash3.jpg");}
-}
-
+/*ul>li{margin-bottom: 1rem; } */
 
 #team {
     margin: auto;
@@ -708,7 +589,7 @@ section#info {
 {
     text-align: center;
     font-size: 1.5em;
-    margin 10%;
+    margin: 10%;
 
 }
 .team-box__about{
@@ -820,44 +701,4 @@ input[type=submit] {
         width: 100%;
     }
 }
-
-.container {margin-top: 2rem;
-            margin-bottom:2rem;
-
-          }
-ul {   list-style-type: none;}
-
-ul::before {
-    content: "";
-    display: block;
-    width: 2%;
-    height: 5em;
-    position: absolute;
-    top: 1em;
-    left: 0;
-    background-color: green;
-
-
-.card-img-top {
-    width: 100%;
-    border-top-left-radius:0px;
-    border-top-right-radius:0px;
-  }
-  .card {
-      position: relative;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      min-width: 0;
-      word-wrap: break-word;
-      background-color: #fff;
-      background-clip: border-box;
-      border: 0px solid rgba(0,0,0,.125);
-      border-radius: 0rem;
-  }
-ul>li{margin-bottom: 1rem; }
 
