@@ -2,7 +2,7 @@
             margin-bottom:2rem;
 
           }
-ul {   list-style-type: none;}
+/*ul {   list-style-type: none;}*/
 
 /*ul::before {
     content: "";
@@ -36,4 +36,4 @@ ul {   list-style-type: none;}
       border: 0px solid rgba(0,0,0,.125);
       border-radius: 0rem;
   }
-ul>li{margin-bottom: 1rem; }
+/*ul>li{margin-bottom: 1rem; }*/

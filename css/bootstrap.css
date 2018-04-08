@@ -164,12 +164,12 @@ a {
   color: #007bff;
   text-decoration: none;
   background-color: transparent;
-  -webkit-text-decoration-skip: objects;
+  /*-webkit-text-decoration-skip: objects;*/
 }
 
 a:hover {
   color: #0056b3;
-  text-decoration: underline;
+  /*text-decoration: underline;*/
 }
 
 a:not([href]):not([tabindex]) {
@@ -3053,7 +3053,7 @@ fieldset:disabled a.btn {
 
 .btn-link:hover {
   color: #0056b3;
-  text-decoration: underline;
+  /*text-decoration: underline;*/
   background-color: transparent;
   border-color: transparent;
 }
