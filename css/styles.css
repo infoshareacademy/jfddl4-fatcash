@@ -411,7 +411,7 @@ label[for="nav-trigger"]:hover {
     background-size: cover;
     background-position: center;
     filter: brightness(70%);
-    letter-spacing: 0.5em;
+    
 
     color: black;
     max-width: 100%;
@@ -427,7 +427,7 @@ label[for="nav-trigger"]:hover {
     margin: 0;
     line-height:3em;
     filter: brightness(100%);
-
+    
 }
 
 .hero__header-wrapper__h {
@@ -486,7 +486,7 @@ label[for="nav-trigger"]:hover {
 .hero__h2 {
     font-size: 1.8em;
     text-align: center;
-
+    letter-spacing:0.2em;
 }
 
 /*HERO END*/
