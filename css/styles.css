@@ -410,8 +410,8 @@ label[for="nav-trigger"]:hover {
     height: 700px;
     background-size: cover;
     background-position: center;
-    filter: brightness(70%);
-    
+    /*filter: brightness(70%);*/
+
 
     color: black;
     max-width: 100%;
@@ -499,7 +499,7 @@ label[for="nav-trigger"]:hover {
 /*INFO*/
 
 #info {
-   background-color: rgba(191, 191, 255, 0.51);
+   background-color: rgba(235, 236, 239, 0.51);
     margin-top: 1rem;
     margin-bottom: 1rem;
     padding-top: 2em;
@@ -511,7 +511,7 @@ label[for="nav-trigger"]:hover {
     /*background-color: rgba(146, 143, 160, 0.64);*/
 
 }
-/*ul {   list-style-type: none;}
+.info-ul {   list-style-type: none;}
 
 /*ul::before {
     content: "";
@@ -567,7 +567,7 @@ label[for="nav-trigger"]:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: rgba(191, 191, 255, 0.51);
+    background-color: rgba(235, 236, 239, 0.51);
     /*background-color: rgba(146, 143, 160, 0.64);*/
     text-align: center;
 
@@ -580,7 +580,7 @@ label[for="nav-trigger"]:hover {
 
 .signup__div > p {
     width: 50%;
-    text-align: justify;
+    /*text-align: justify;*/
     color: #1e1b30;
 }
 
@@ -631,13 +631,13 @@ input[type=checkbox] {
     bottom: 0;
     left: 0;
     padding: 1rem;
-    background-color: #efefef;
+
     align-items: center;
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
 #footer-background {
-    background-color: #efefef;
+    background-color: #a0a0a0;
 
 }
