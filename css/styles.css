@@ -439,7 +439,7 @@ label[for="nav-trigger"]:hover {
 }
 
 .hero__button {
-    width: 10em;
+
     /*background-color: #cccccc;*/
     text-align: center;
     /*padding:2.5em 2em;*/
@@ -461,7 +461,7 @@ label[for="nav-trigger"]:hover {
     width: 10em;
     text-decoration: none;
     color: black;
-    background-color: #cccccc;
+    background-color:#75d7da;
     padding:1.5em 2em;
     /*opacity: 0.9;*/
     border-radius:5%;
