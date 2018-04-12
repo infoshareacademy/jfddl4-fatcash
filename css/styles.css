@@ -7,6 +7,32 @@ body {
 /*BODY END*/
 
 /*MENU*/
+
+.menu__top {
+    display: flex;
+    justify-content: flex-end;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0.6rem 0rem 0.6rem 0rem;
+    color: white;
+    width: 100% !important;
+
+    align-items: center;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+#menu__top-background {
+    background-color: #51c5c9;
+
+}
+
+.menu__top__lang {
+    margin-bottom: 0rem;
+    padding-right: 1.8rem;
+}
+
 .main-nav-desktop {
     background-color: white;
     position: sticky;
@@ -22,7 +48,7 @@ body {
 }
 
 .main-nav__logo {
-    margin: 12px 0px 6px 40px;
+    margin: 6px 0px 6px 40px;
 }
 
 #main-nav__logo-img {
@@ -47,8 +73,8 @@ body {
 
 .main-nav-mobile {
     display: none;
-    position: fixed;
-    top: 18px;
+    /*position: fixed;*/
+    top: 85px;
     right: 6vw;
     z-index: 100;
 }
@@ -74,7 +100,7 @@ body {
     width: 70%;
     height: 100%;
     margin: 0;
-    padding: 0;
+    padding-top: 15vw;
     position: fixed;
     top: 0;
     left: 0;
@@ -111,8 +137,8 @@ body {
     list-style: none;
     position: relative;
     top: 12vw;
-    /* -webkit-transform: translate(0, -55%); */
-    /* transform: translate(0, -55%); */
+     /*-webkit-transform: translate(0, -55%);*/
+     /*transform: translate(0, -55%);*/
 }
 
 .slide-menu li{
@@ -161,12 +187,12 @@ body {
 }
 
 .slide-menu li.selected::before {
-    background: #fff;
+    /*background: #fff;*/
 }
 
 .slide-menu li.selected a:link,
 .slide-menu li.selected a:visited {
-    color: #51c5c9;
+    /*color: #51c5c9;*/
 }
 
 .slide-menu li.selected a:hover {
