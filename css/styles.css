@@ -363,7 +363,7 @@ label[for="nav-trigger"]:hover {
 
 /**** No WOW animations on mobile ****/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .wow{
         animation-name: none !important;
         visibility: visible !important;
