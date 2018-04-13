@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="Shortcut icon" href="img/favicon.png" >
+    <link rel="Shortcut icon" href="img/wallet01.png.png" >
     <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
@@ -13,48 +13,49 @@
     <title>FatCash Planner</title>
 
 </head>
-<body>
-git
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
 
 <!-- MENU -->
+<section id="menu__top-background">
+    <div class="menu__top">
+        <p class ="menu__top__lang">Version: <a href="index.html">EN</a> | <a href="index.html">PL</a></p>
+    </div>
+</section>
 
-
-  <nav class="main-nav-desktop">
+  <nav class="navbar navbar-dark main-nav-desktop ">
 
       <a href="" class="main-nav__logo">
           <img id="main-nav__logo-img" src="img/wallet01.png" alt="FatCash logo">
       </a>
-      <ul class="main-nav-desktop__list">
-          <li><a href="#hero" class="main-nav-desktop__list-btn">FAT CASH</a></li>
-          <li><a href="#features" class="main-nav-desktop__list-btn">FUNCTIONS</a></li>
-          <li><a href="#info" class="main-nav-desktop__list-btn">MORE</a></li>
-          <li><a href="#team" class="main-nav-desktop__list-btn">TEAM</a></li>
-          <li><a href="#signup" class="main-nav-desktop__list-btn">SIGN UP</a></li>
-          <li><a href="#content" class="main-nav-desktop__list-btn">CONTACT</a></li>
+      <ul class=" nav nav-pills d-none d-md-flex">
+          <li class="nav-item"><a href="#heronav" class="nav-link">FAT CASH</a></li>
+          <li class="nav-item"><a href="#features" class="nav-link">FUNCTIONS</a></li>
+          <li class="nav-item"><a href="#info" class="nav-link">MORE</a></li>
+          <li class="nav-item"><a href="#team" class="nav-link">TEAM</a></li>
+          <li class="nav-item"><a href="#signup" class="nav-link">SIGN UP</a></li>
       </ul>
+
+      <div class="main-nav-mobile">
+          <input type="checkbox" id="nav-trigger" class="nav-trigger">
+          <label id="menuText" class="uppercase noselect" for="nav-trigger">menu
+              <a class="cmn-toggle-switch cmn-toggle-switch__htx">
+                  <span></span>
+              </a>
+          </label>
+          <div class="slide-menu">
+              <ul>
+                  <li><a href="#hero">FAT CASH</a></li>
+                  <li><a href="#features">FUNCTIONS</a></li>
+                  <li><a href="#info">MORE</a></li>
+                  <li><a href="#team">TEAM</a></li>
+                  <li><a href="#signup">SIGN UP</a></li>
+              </ul>
+
+          </div>
+      </div>
+
   </nav>
-
-
-<div class="main-nav-mobile">
-    <input type="checkbox" id="nav-trigger" class="nav-trigger">
-    <label id="menuText" class="uppercase noselect" for="nav-trigger">menu
-        <a class="cmn-toggle-switch cmn-toggle-switch__htx">
-            <span></span>
-        </a>
-    </label>
-    <div class="slide-menu">
-        <ul>
-            <li class="selected"><a href="#hero">FAT CASH</a></li>
-            <li><a href="#features">FUNCTIONS</a></li>
-            <li><a href="#info">MORE</a></li>
-            <li><a href="#team">TEAM</a></li>
-            <li><a href="#signup">SIGN UP</a></li>
-            <li><a href="#content">CONTACT</a></li>
-        </ul>
-
-    </div>
-</div>
-
 
 
 <!-- /MENU -->
@@ -214,6 +215,7 @@ git
   <!-- /INFO-->
 
 <!-- TEAM -->
+
 <h2 class="team-features__heading text-center">OUR TEAM</h2>
 <section id="team">
     <div class="container">
@@ -221,7 +223,7 @@ git
         <div class="row">
             <div class="col-6 col-md-3 text-center mb-3">
 
-                <img class="img-fluid rounded-circle" src="img/Artur.jpg"><img>
+                <img class="team-member img-fluid rounded-circle" src="img/Artur.jpg"><img>
                 <h3 class="pt-3 pb-3">Artur Miłkowski</h3>
 
                 <div class="row">
@@ -232,6 +234,7 @@ git
                         <a href="http://www.facebook.pl"><img class="img-fluid mr-auto ml-auto h-50" src="img/internet.svg"></a>
                     </div>
                 </div>
+                <section id="signup"></section>
                 <div>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -241,7 +244,7 @@ git
             </div>
             <div class="col-6 col-md-3 text-center mb-3">
 
-                <img class="img-fluid rounded-circle" src="img/Jan.jpg"><img>
+                <img class="team-member img-fluid rounded-circle" src="img/Jan.jpg"><img>
                 <h3 class="pt-3 pb-3">Jan Choma</h3>
 
                 <div class="row">
@@ -261,7 +264,7 @@ git
             </div>
             <div class="col-6 col-md-3 text-center mb-3">
 
-                <img class="img-fluid rounded-circle" src="img/PawelT.jpg"><img>
+                <img class="team-member img-fluid rounded-circle" src="img/PawelT.jpg"><img>
                 <h3 class="pt-3 pb-3">Paweł Tarka</h3>
 
                 <div class="row">
@@ -281,7 +284,7 @@ git
             </div>
             <div class="col-6 col-md-3 text-center mb-3">
 
-                <img class="img-fluid rounded-circle" src="img/PawelP.jpg"><img>
+                <img class="team-member img-fluid rounded-circle" src="img/PawelP.jpg"><img>
                 <h3 class="pt-3 pb-3">Paweł Polit</h3>
 
                 <div class="row">
@@ -306,7 +309,7 @@ git
 <!-- /TEAM -->
 
 <!-- SIGNUP -->
-<section id="signup"></section>
+<!--<section id="signup"></section>-->
 
 <div class="signup__div">
     <h1>Sign up for app premiere</h1>
@@ -336,12 +339,6 @@ git
 <!-- /FOOTER -->
 
 
-
-
-
-
-
-
 <!--CW-->
 <section id="cookie-warn">
 
@@ -351,9 +348,13 @@ git
 </section>
 
 <!--/CW-->
+
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/bootstrap.bundle.js"></script>
 <script src="js/script.js"></script>
+<script src="js/in-view.min.js"></script>
+
+
 </body>
 </html>
 
