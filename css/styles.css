@@ -4,6 +4,7 @@ body {
     font-size: 1em;
     color: #1e1b30;
 }
+
 /*BODY END*/
 
 /*MENU*/
@@ -58,9 +59,6 @@ body {
 #main-nav__logo-img:hover {
     width: 45px;
 }
-
-
-
 
 /*
 @media only screen and (max-width: 650px) {
@@ -137,11 +135,11 @@ body {
     list-style: none;
     position: relative;
     top: 12vw;
-     /*-webkit-transform: translate(0, -55%);*/
-     /*transform: translate(0, -55%);*/
+    /*-webkit-transform: translate(0, -55%);*/
+    /*transform: translate(0, -55%);*/
 }
 
-.slide-menu li{
+.slide-menu li {
     color: #000;
     text-align: center;
     font-size: 2.2em;
@@ -149,7 +147,6 @@ body {
     background: transparent;
     position: relative;
 }
-
 
 .slide-menu li::before {
     content: '';
@@ -180,6 +177,7 @@ body {
     transform: scale(1);
     opacity: 1;
 }
+
 @media (max-width: 480px) {
     .slide-menu li {
         font-size: 2.4em;
@@ -205,7 +203,7 @@ body {
 }
 
 .slide-menu li a:link,
-.slide-menu li a:visited{
+.slide-menu li a:visited {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 0.624em;
@@ -233,7 +231,7 @@ body {
     color: #131820;
 }
 
-.slide-menu li:active, .slide-menu li a:focus{
+.slide-menu li:active, .slide-menu li a:focus {
     /*background: rgba(236, 0, 140, 0.35);*/
 }
 
@@ -263,7 +261,7 @@ label[for="nav-trigger"]:hover {
     color: #fff;
 }
 
-.nav-trigger:checked ~ label[for="nav-trigger"]:hover  {
+.nav-trigger:checked ~ label[for="nav-trigger"]:hover {
     color: #3dbca9;
 }
 
@@ -275,6 +273,7 @@ label[for="nav-trigger"]:hover {
     z-index: 1000000;
     visibility: hidden;
 }
+
 .cmn-toggle-switch {
     background: transparent;
     float: right;
@@ -299,12 +298,15 @@ label[for="nav-trigger"]:hover {
     visibility: initial;
 
 }
+
 .cmn-toggle-switch:hover {
     transform: scale(1.2);
 }
+
 .cmn-toggle-switch:focus {
     outline: none;
 }
+
 .cmn-toggle-switch span {
     transition: inherit;
     display: block;
@@ -315,6 +317,7 @@ label[for="nav-trigger"]:hover {
     height: 3px;
     background: #51c5c9;
 }
+
 .cmn-toggle-switch span::before,
 .cmn-toggle-switch span::after {
     transition: inherit;
@@ -329,24 +332,28 @@ label[for="nav-trigger"]:hover {
 
 .nav-trigger:checked ~ label[for="nav-trigger"] .cmn-toggle-switch span,
 .nav-trigger:checked ~ label[for="nav-trigger"] .cmn-toggle-switch span::before,
-.nav-trigger:checked ~ label[for="nav-trigger"] .cmn-toggle-switch span::after  {
+.nav-trigger:checked ~ label[for="nav-trigger"] .cmn-toggle-switch span::after {
     background: #fff;
 }
 
 .cmn-toggle-switch span::before {
     top: -8px;
 }
+
 .cmn-toggle-switch span::after {
     bottom: -8px;
 }
+
 .cmn-toggle-switch__htx {
     background-color: transparent;
 
 }
+
 .cmn-toggle-switch__htx span {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
+
 .cmn-toggle-switch__htx span::before,
 .cmn-toggle-switch__htx span::after {
     -webkit-transition-duration: 0.3s, 0.3s;
@@ -354,33 +361,40 @@ label[for="nav-trigger"]:hover {
     /*-webkit-transition-delay: 0.3s, 0;*/
     /*transition-delay: 0.3s, 0;*/
 }
+
 .cmn-toggle-switch__htx span::before {
     -webkit-transition-property: top, -webkit-transform;
     transition-property: top, transform;
 }
+
 .cmn-toggle-switch__htx span::after {
     -webkit-transition-property: bottom, -webkit-transform;
     transition-property: bottom, transform;
 }
+
 /* active state, i.e. menu open */
 .nav-trigger:checked ~ label[for="nav-trigger"] .cmn-toggle-switch__htx {
     background-color: transparent;
 }
+
 .nav-trigger:checked ~ label[for="nav-trigger"] .cmn-toggle-switch__htx span {
     background: none;
 }
+
 .nav-trigger:checked ~ label[for="nav-trigger"] .cmn-toggle-switch__htx span::before {
     top: 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+
 .nav-trigger:checked ~ label[for="nav-trigger"] .cmn-toggle-switch__htx span::after {
     bottom: 0;
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
+
 .nav-trigger:checked ~ label[for="nav-trigger"] .cmn-toggle-switch__htx span::before,
 .nav-trigger:checked ~ label[for="nav-trigger"] .cmn-toggle-switch__htx span::after {
     /*-webkit-transition-delay: 0, 0.3s;*/
@@ -390,7 +404,7 @@ label[for="nav-trigger"]:hover {
 /**** No WOW animations on mobile ****/
 
 @media screen and (max-width: 767px) {
-    .wow{
+    .wow {
         animation-name: none !important;
         visibility: visible !important;
     }
@@ -410,7 +424,6 @@ label[for="nav-trigger"]:hover {
     background-position: center;
     /*filter: brightness(70%);*/
 
-
     color: black;
     max-width: 100%;
     min-width: 100%;
@@ -423,9 +436,9 @@ label[for="nav-trigger"]:hover {
     font-size: 6em;
     padding: 0;
     margin: 0;
-    line-height:3em;
+    line-height: 3em;
     filter: brightness(100%);
-    
+
 }
 
 .hero__header-wrapper__h {
@@ -453,20 +466,18 @@ label[for="nav-trigger"]:hover {
 
 }
 
-
 .hero__button-link {
 
     width: 10em;
     text-decoration: none;
     color: black;
-    background-color:#75d7da;
-    padding:1.5em 2em;
+    background-color: #75d7da;
+    padding: 1.5em 2em;
     /*opacity: 0.9;*/
-    border-radius:5%;
+    border-radius: 5%;
     transition: 0.5s;
     font-size: 1.5em;
     line-height: 10%;
-
 
 }
 
@@ -478,38 +489,40 @@ label[for="nav-trigger"]:hover {
     color: white;
     text-decoration: none;
 
-
 }
 
 .hero__h2 {
     font-size: 1.8em;
     text-align: center;
-    letter-spacing:0.2em;
+    letter-spacing: 0.2em;
 }
 
 /*HERO END*/
 
 /*FEATURES*/
 
-
 /*FEATURES END*/
 
 /*INFO*/
 
 #info {
-   background-color: rgba(235, 236, 239, 0.51);
+    background-color: rgba(235, 236, 239, 0.51);
     margin-top: 1rem;
     margin-bottom: 1rem;
     padding-top: 2em;
     padding-bottom: 2em;
 }
+
 .container {
     margin-top: 3rem;
-    margin-bottom:2rem;
+    margin-bottom: 2rem;
     /*background-color: rgba(146, 143, 160, 0.64);*/
 
 }
-.info-ul {   list-style-type: none;}
+
+.info-ul {
+    list-style-type: none;
+}
 
 /*ul::before {
     content: "";
@@ -521,12 +534,12 @@ label[for="nav-trigger"]:hover {
     left: 0;
     background-color: green;*/
 
-
 .card-img-top {
     width: 100%;
-    border-top-left-radius:0px;
-    border-top-right-radius:0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
 }
+
 .card {
     position: relative;
     display: -webkit-box;
@@ -540,15 +553,15 @@ label[for="nav-trigger"]:hover {
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
-    border: 0px solid rgba(0,0,0,.125);
+    border: 0px solid rgba(0, 0, 0, .125);
     border-radius: 0rem;
 }
+
 /*ul>li{margin-bottom: 1rem; } */
 
 /*INFO END*/
 
 /*TEAM*/
-
 
 /*TEAM END*/
 
@@ -619,7 +632,6 @@ input[type=checkbox] {
 
 /*SIGNUP END*/
 
-
 /*FOOTER*/
 
 .footer {
@@ -640,9 +652,8 @@ input[type=checkbox] {
 
 }
 
-
 /* CW */
-#cookie-warn{
+#cookie-warn {
     position: fixed;
     bottom: 0;
     background: #EEE;
@@ -653,24 +664,79 @@ input[type=checkbox] {
     z-index: 99;
 }
 
-#cookie-warn a{
+#cookie-warn a {
     color: #D66E1A;
     text-transform: uppercase;
     float: right;
     padding-right: 20px;
 }
 
-#cookie-warn p{
+#cookie-warn p {
     font-size: 12px;
     color: #333;
 }
 
-
-.in-view{
-    animation:spin 0.75s linear infinite;
+.in-view {
+    animation: spin 0.75s linear infinite;
     animation-iteration-count: 1;
 }
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
 }
 
 
+
+/*TOP BUTTON*/
+
+#button__top-return {
+    position: fixed;
+    bottom: 12vh;
+    right: 3vh;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: 10%;
+    opacity: 0.8;
+}
+
+.button__top__link {
+
+    display: block;
+    padding: 2vh;
+    color: #f5f6f7;
+    background-color: #141c2b;
+    border-radius: 10%;
+    transition: all 0.5s;
+}
+
+.button__top__link:hover {
+    color: white;
+    opacity: 0.7;
+}
+
+.button__top-return-hidden {
+    display: none;
+
+}
+
+@media screen and (max-width: 675px) {
+
+    #button__top-return {
+
+        bottom: 12vh;
+        right: 0.5vh;
+    }
+
+    .button__top__link {
+
+        padding: 1vh;
+
+    }
+
+}
+
+/*TOP BUTTON*/
