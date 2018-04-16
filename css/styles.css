@@ -512,15 +512,14 @@ label[for="nav-trigger"]:hover {
 
 }
 
-@media screen and(max-width:365px) {
+
+    @media only screen and (max-width:700px) {
 
 
-    .header__link {
+        .header__link{
 
 
-          background-color: #80bdff;
-        padding: 1.5em 2em;
-        font-size: 1em;
+        font-size: 1.5em;
     }
 
 
