@@ -414,188 +414,96 @@ label[for="nav-trigger"]:hover {
 
 /*HERO*/
 
-.header__h1
-{
+.header__h1 {
 
-    top:10%;
+    top: 10%;
     position: absolute;
     z-index: 1;
-    color:black;
+    color: black;
     display: block;
     width: 100%;
     text-align: center;
-    font-size: 8em;
+    font-size:8em;
 }
 
-
-.header__h2
-{
-    top:30%;
+.header__h2 {
+    top: 35%;
     width: 100%;
     text-align: center;
-    position:absolute;
-   z-index: 1;
-    font-size:2em;
+    position: absolute;
+    z-index: 1;
+    font-size: 2em;
     letter-spacing: 0.2em;
 }
 
+.header__link {
 
-.header__link
-{
-
-
-    position:absolute;
+    position: absolute;
     z-index: 1;
-   text-align: center;
-    top:60%;
-   margin: 0;
+    text-align: center;
+    top: 60%;
+    margin: 0;
     transform: translateX(-50%);
     left: 50%;
-    padding:1.5em 3em;
+    padding: 1.5em 2em;
     color: black;
     background-color: #75d7da;
     border: none;
     border-radius: 10%;
-    font-size:2em;
+    font-size: 2em;
 }
 
-
-
-.carousel-wrapper
-{
+.carousel-wrapper {
 
     overflow: hidden;
     height: calc(100vh - 200px);
 
 }
 
-.carousel
-{
+.carousel {
 
     height: 100%;
 
 }
 
-
-.carousel-mod .carousel-item img
-{
+.carousel-mod .carousel-item img {
 
     width: 100%;
     height: auto;
 
 }
 
-.carousel-mod .carousel-inner
-{
-    height:100%;
-
+.carousel-mod .carousel-inner {
+    height: 100%;
 
 }
 
-.carousel-mod .carousel-item
-{
+.carousel-mod .carousel-item {
 
     width: 100%;
     height: 100%;
 
 }
 
-.carousel-mod .carousel-item-1
-{
-
-   background-image: url("../img/hero2.jpg");
-  background-size: cover;
-}
-
-.carousel-mod .carousel-item-2
-{
+.carousel-mod .carousel-item-1 {
 
     background-image: url("../img/hero2.jpg");
     background-size: cover;
 }
 
-
-.carousel-mod .carousel-item-3
-{
+.carousel-mod .carousel-item-2 {
 
     background-image: url("../img/hero2.jpg");
     background-size: cover;
 }
 
-
-
-
-
-
-.hero {
+.carousel-mod .carousel-item-3 {
 
     background-image: url("../img/hero2.jpg");
-    background-color: dodgerblue;
-    width: 100%;
-    height:100vh;
     background-size: cover;
-    background-position: center;
-    /*filter: brightness(70%);*/
-
-    color: black;
-    max-width: 100%;
-    min-width: 100%;
-
-}
-
-.hero__header--h1 {
-
-    text-align: center;
-    font-size: 6em;
-    padding: 0;
-    margin: 0;
-    line-height: 3em;
-    filter: brightness(100%);
-
-}
-
-.hero__header-wrapper__h {
-
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 2em;
-
-}
-
-.hero__button {
-
-    /*background-color: #cccccc;*/
-    text-align: center;
-    /*padding:2.5em 2em;*/
-    box-sizing: border-box;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 6.5em;
-    /*opacity: 0.9;*/
-    /*border-radius:5%;*/
-    /*transition: 0.5s;*/
-    /*font-size: 1.5em;*/
-    /*line-height: 10%;*/
-
-}
-
-.hero__button-link {
-
-    width: 10em;
-    text-decoration: none;
-    color: black;
-    background-color: #75d7da;
-    padding: 1.5em 2em;
-    /*opacity: 0.9;*/
-    border-radius: 5%;
-    transition: 0.5s;
-    font-size: 1.5em;
-    line-height: 10%;
-
 }
 
 .header__link:hover {
-
 
     cursor: pointer;
     background-color: #51c5c9;
@@ -604,11 +512,24 @@ label[for="nav-trigger"]:hover {
 
 }
 
-.hero__h2 {
-    font-size: 1.8em;
-    text-align: center;
-    letter-spacing: 0.2em;
+@media screen and(max-width:365px) {
+
+
+    .header__link {
+
+
+          background-color: #80bdff;
+        padding: 1.5em 2em;
+        font-size: 1em;
+    }
+
+
 }
+
+
+
+
+
 
 /*HERO END*/
 
@@ -800,8 +721,6 @@ input[type=checkbox] {
         transform: rotate(360deg);
     }
 }
-
-
 
 /*TOP BUTTON*/
 
