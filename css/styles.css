@@ -477,6 +477,16 @@ label[for="nav-trigger"]:hover {
 }
 
 
+.carousel-mod .carousel-item img
+{
+
+    width: 100%;
+    height: auto;
+
+}
+
+
+
 .hero {
 
     background-image: url("../img/hero2.jpg");
