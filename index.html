@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="Shortcut icon" href="img/wallet01.png" >
+    <link rel="Shortcut icon" href="img/wallet01.png">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
@@ -20,43 +20,43 @@
 <!-- MENU -->
 <section id="menu__top-background">
     <div class="menu__top">
-        <p class ="menu__top__lang">Version: <a href="index.html">EN</a> | <a href="index.html">PL</a></p>
+        <p class="menu__top__lang">Version: <a href="index.html">EN</a> | <a href="index.html">PL</a></p>
     </div>
 </section>
 
-  <nav class="navbar navbar-dark main-nav-desktop ">
+<nav class="navbar navbar-dark main-nav-desktop ">
 
-      <a href="" class="main-nav__logo">
-          <img id="main-nav__logo-img" src="img/wallet01.png" alt="FatCash logo">
-      </a>
-      <ul class=" nav nav-pills d-none d-md-flex">
-          <li class="nav-item"><a href="#heronav" class="nav-link">FAT CASH</a></li>
-          <li class="nav-item"><a href="#features" class="nav-link">FUNCTIONS</a></li>
-          <li class="nav-item"><a href="#info" class="nav-link">MORE</a></li>
-          <li class="nav-item"><a href="#team" class="nav-link">TEAM</a></li>
-          <li class="nav-item"><a href="#signup" class="nav-link">SIGN UP</a></li>
-      </ul>
+    <a href="" class="main-nav__logo">
+        <img id="main-nav__logo-img" src="img/wallet01.png" alt="FatCash logo">
+    </a>
+    <ul class=" nav nav-pills d-none d-md-flex">
+        <li class="nav-item"><a href="#heronav" class="nav-link">FAT CASH</a></li>
+        <li class="nav-item"><a href="#features" class="nav-link">FUNCTIONS</a></li>
+        <li class="nav-item"><a href="#info" class="nav-link">MORE</a></li>
+        <li class="nav-item"><a href="#team" class="nav-link">TEAM</a></li>
+        <li class="nav-item"><a href="#signup" class="nav-link">SIGN UP</a></li>
+    </ul>
 
-      <div class="main-nav-mobile">
-          <input type="checkbox" id="nav-trigger" class="nav-trigger">
-          <label id="menuText" class="uppercase noselect" for="nav-trigger">menu
-              <a class="cmn-toggle-switch cmn-toggle-switch__htx">
-                  <span></span>
-              </a>
-          </label>
-          <div class="slide-menu">
-              <ul>
-                  <li><a href="#hero">FAT CASH</a></li>
-                  <li><a href="#features">FUNCTIONS</a></li>
-                  <li><a href="#info">MORE</a></li>
-                  <li><a href="#team">TEAM</a></li>
-                  <li><a href="#signup">SIGN UP</a></li>
-              </ul>
+    <div class="main-nav-mobile">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger">
+        <label id="menuText" class="uppercase noselect" for="nav-trigger">menu
+            <a class="cmn-toggle-switch cmn-toggle-switch__htx">
+                <span></span>
+            </a>
+        </label>
+        <div class="slide-menu">
+            <ul>
+                <li><a href="#hero">FAT CASH</a></li>
+                <li><a href="#features">FUNCTIONS</a></li>
+                <li><a href="#info">MORE</a></li>
+                <li><a href="#team">TEAM</a></li>
+                <li><a href="#signup">SIGN UP</a></li>
+            </ul>
 
-          </div>
-      </div>
+        </div>
+    </div>
 
-  </nav>
+</nav>
 
 
 <!-- /MENU -->
@@ -66,21 +66,56 @@
 
 <header>
 
-    <div class="hero" id="heronav">
+    <div class="container-fluid h-25 ">
 
-        <div class="hero__header-wrapper__h">
-            <h1 class="hero__header--h1"> Fatcash</h1>
-            <h2 class="hero__h2">Made by people for the people <br><br>
-                Welcome to Fatcash
-            </h2>
+
+        <div class="row">
+
+
+            <div class="col-12 text-center">
+
+                <div class="carousel-wrapper position-relative">
+
+                    <h1 class="header__h1">Fatcash</h1>
+                    <h2 class="header__h2">Made by people for the people<br><br>
+                    Welcome to fatcash
+                    </h2>
+
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block h-25" src="img/hero2.jpg" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block h-25 " src="img/hero2.jpg" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block  h-25 " src="img/hero2.jpg" alt="Third slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                           data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                           data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
         </div>
 
 
-        <div class="hero__button"><a href="#signup" class="hero__button-link">Sign Up</a></div>
-
-
-
     </div>
+
 
 </header>
 
@@ -126,94 +161,118 @@
 </section>
 <!-- /FEATURES-->
 
-  <!-- INFO-->
+<!-- INFO-->
 <section id="info">
-<div class="container">
-    <div class="row">
-      <div class="col-md-3 col-sm-6">
-        <div class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="img/animplash1.jpg" alt="First slide">
-              <h5><center>Super</center></h5>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="img/animplash1.jpg" alt="First slide">
+                            <h5>
+                                <center>Super</center>
+                            </h5>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/animplash2.jpg" alt="Second slide">
+                            <h5>
+                                <center>Hiper</center>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="img/animplash2.jpg" alt="Second slide">
-              <h5><center>Hiper</center></h5>
+            <div class="col-md-3 col-sm-6">
+                <ul class="info-ul">
+                    <li><strong>Drogi Marszałku</strong> ji śledczej do przeanalizowania form oddziaływania.</li>
+                    <li><strong>Wysoka Izbo</strong> PKB rośnie. Z pełną odpowiedzialnością mogę stwierdzić iż
+                        utworzenie komisji śledczej do przeanalizowania form oddziaływania.
+                    </li>
+                </ul>
             </div>
-          </div>
+            <div class="col-md-3 col-sm-6">
+                <ul class="info-ul">
+                    <li><strong>Drogi Marszałku</strong> ji śledczej do przeanalizowania form oddziaływania.</li>
+                    <li><strong>Wysoka Izbo</strong> PKB rośnie. Z pełną odpowiedzialnością mogę stwierdzić iż
+                        utworzenie komisji śledczej do przeanalizowania form oddziaływania.
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="img/animplash3.jpg" alt="First slide">
+                            <h5>
+                                <center>Sukces</center>
+                            </h5>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/animplash4.jpg" alt="Second slide">
+                            <h5>
+                                <center>Hurra</center>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="img/animplash5.jpg" alt="First slide">
+                            <h5>
+                                <center>Wielkie</center>
+                            </h5>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/animplash6.jpg" alt="Second slide">
+                            <h5>
+                                <center>Pieniądze</center>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <ul class="info-ul">
+                    <li><strong>Drogi Marszałku</strong> ji śledczej do przeanalizowania form oddziaływania.</li>
+                    <li><strong>Wysoka Izbo</strong> PKB rośnie. Z pełną odpowiedzialnością mogę stwierdzić iż
+                        utworzenie komisji śledczej do przeanalizowania form oddziaływania.
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <ul class="info-ul">
+                    <li><strong>Drogi Marszałku</strong> ji śledczej do przeanalizowania form oddziaływania.</li>
+                    <li><strong>Wysoka Izbo</strong> PKB rośnie. Z pełną odpowiedzialnością mogę stwierdzić iż
+                        utworzenie komisji śledczej do przeanalizowania form oddziaływania.
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="img/animplash7.jpg" alt="First slide">
+                            <h5>
+                                <center>Aplikacja</center>
+                            </h5>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/animplash8.jpg" alt="Second slide">
+                            <h5>
+                                <center>Przyszłości</center>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <ul class="info-ul">
-          <li><strong>Drogi Marszałku</strong> ji śledczej do przeanalizowania form oddziaływania.</li>
-          <li><strong>Wysoka Izbo</strong> PKB rośnie. Z pełną odpowiedzialnością mogę stwierdzić iż utworzenie komisji śledczej do przeanalizowania form oddziaływania.</li>
-        </ul>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <ul class="info-ul">
-          <li><strong>Drogi Marszałku</strong> ji śledczej do przeanalizowania form oddziaływania.</li>
-          <li><strong>Wysoka Izbo</strong> PKB rośnie. Z pełną odpowiedzialnością mogę stwierdzić iż utworzenie komisji śledczej do przeanalizowania form oddziaływania.</li>
-        </ul>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="img/animplash3.jpg" alt="First slide">
-              <h5><center>Sukces</center></h5>
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="img/animplash4.jpg" alt="Second slide">
-              <h5><center>Hurra</center></h5>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="img/animplash5.jpg" alt="First slide">
-              <h5><center>Wielkie</center></h5>
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="img/animplash6.jpg" alt="Second slide">
-              <h5><center>Pieniądze</center></h5>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <ul class="info-ul">
-          <li><strong>Drogi Marszałku</strong> ji śledczej do przeanalizowania form oddziaływania.</li>
-          <li><strong>Wysoka Izbo</strong> PKB rośnie. Z pełną odpowiedzialnością mogę stwierdzić iż utworzenie komisji śledczej do przeanalizowania form oddziaływania.</li>
-        </ul>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <ul class="info-ul">
-          <li><strong>Drogi Marszałku</strong> ji śledczej do przeanalizowania form oddziaływania.</li>
-          <li><strong>Wysoka Izbo</strong> PKB rośnie. Z pełną odpowiedzialnością mogę stwierdzić iż utworzenie komisji śledczej do przeanalizowania form oddziaływania.</li>
-        </ul>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="img/animplash7.jpg" alt="First slide">
-              <h5><center>Aplikacja</center></h5>
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="img/animplash8.jpg" alt="Second slide">
-              <h5><center>Przyszłości</center></h5>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
 </section>
-  <!-- /INFO-->
+<!-- /INFO-->
 
 <!-- TEAM -->
 
@@ -229,10 +288,12 @@
 
                 <div class="row">
                     <div class="col-6">
-                        <a href="http://www.facebook.pl"><img class="img-fluid mr-auto ml-auto h-50" src="img/facebook-app-logo.svg"></a>
+                        <a href="http://www.facebook.pl"><img class="img-fluid mr-auto ml-auto h-50"
+                                                              src="img/facebook-app-logo.svg"></a>
                     </div>
                     <div class="col-6">
-                        <a href="http://www.facebook.pl"><img class="img-fluid mr-auto ml-auto h-50" src="img/internet.svg"></a>
+                        <a href="http://www.facebook.pl"><img class="img-fluid mr-auto ml-auto h-50"
+                                                              src="img/internet.svg"></a>
                     </div>
                 </div>
                 <section id="signup"></section>
@@ -250,10 +311,12 @@
 
                 <div class="row">
                     <div class="col-6">
-                        <a href="http://www.facebook.pl"><img class="img-fluid mr-auto ml-auto h-50" src="img/facebook-app-logo.svg"></a>
+                        <a href="http://www.facebook.pl"><img class="img-fluid mr-auto ml-auto h-50"
+                                                              src="img/facebook-app-logo.svg"></a>
                     </div>
                     <div class="col-6">
-                        <a href="http://www.facebook.pl"><img class="img-fluid mr-auto ml-auto h-50" src="img/internet.svg"></a>
+                        <a href="http://www.facebook.pl"><img class="img-fluid mr-auto ml-auto h-50"
+                                                              src="img/internet.svg"></a>
                     </div>
                 </div>
                 <div>
@@ -270,10 +333,12 @@
 
                 <div class="row">
                     <div class="col-6">
-                        <a href="http://www.facebook.pl"><img class="img-fluid mr-auto ml-auto h-50" src="img/facebook-app-logo.svg"></a>
+                        <a href="http://www.facebook.pl"><img class="img-fluid mr-auto ml-auto h-50"
+                                                              src="img/facebook-app-logo.svg"></a>
                     </div>
                     <div class="col-6">
-                        <a href="http://www.facebook.pl"><img class="img-fluid mr-auto ml-auto h-50" src="img/internet.svg"></a>
+                        <a href="http://www.facebook.pl"><img class="img-fluid mr-auto ml-auto h-50"
+                                                              src="img/internet.svg"></a>
                     </div>
                 </div>
                 <div>
@@ -290,10 +355,12 @@
 
                 <div class="row">
                     <div class="col-6">
-                        <a href="http://www.facebook.pl"><img class="img-fluid mr-auto ml-auto h-50" src="img/facebook-app-logo.svg"></a>
+                        <a href="http://www.facebook.pl"><img class="img-fluid mr-auto ml-auto h-50"
+                                                              src="img/facebook-app-logo.svg"></a>
                     </div>
                     <div class="col-6">
-                        <a href="http://www.facebook.pl"><img class="img-fluid mr-auto ml-auto h-50" src="img/internet.svg"></a>
+                        <a href="http://www.facebook.pl"><img class="img-fluid mr-auto ml-auto h-50"
+                                                              src="img/internet.svg"></a>
                     </div>
                 </div>
                 <div>
@@ -333,9 +400,9 @@
 <!-- FOOTER -->
 <section id="footer-background">
     <div class="footer container">
-    <p>Copyright by FatCash 2018</p>
-    <img src="img/if_github_291716.svg" alt="">
-</div>
+        <p>Copyright by FatCash 2018</p>
+        <img src="img/if_github_291716.svg" alt="">
+    </div>
 </section>
 <!-- /FOOTER -->
 
@@ -357,12 +424,10 @@
 <!--/TOP-BUTTON-->
 
 
-
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/bootstrap.bundle.js"></script>
 <script src="js/in-view.min.js"></script>
 <script src="js/script.js"></script>
-
 
 
 </body>

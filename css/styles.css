@@ -414,6 +414,34 @@ label[for="nav-trigger"]:hover {
 
 /*HERO*/
 
+.header__h1
+{
+
+    top:10%;
+    position: absolute;
+    z-index: 1;
+    color:black;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 6em;
+}
+
+
+.header__h2
+{
+    top:25%;
+    width: 100%;
+    text-align: center;
+    position:absolute;
+   z-index: 1;
+    font-size: 1.8em;
+    letter-spacing: 0.2em;
+}
+
+
+
+
 .hero {
 
     background-image: url("../img/hero2.jpg");
