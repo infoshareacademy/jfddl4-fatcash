@@ -485,6 +485,46 @@ label[for="nav-trigger"]:hover {
 
 }
 
+.carousel-mod .carousel-inner
+{
+    height:100%;
+
+
+}
+
+.carousel-mod .carousel-item
+{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.carousel-mod .carousel-item-1
+{
+
+   background-image: url("../img/hero2.jpg");
+  background-size: cover;
+}
+
+.carousel-mod .carousel-item-2
+{
+
+    background-image: url("../img/hero2.jpg");
+    background-size: cover;
+}
+
+
+.carousel-mod .carousel-item-3
+{
+
+    background-image: url("../img/hero2.jpg");
+    background-size: cover;
+}
+
+
+
+
 
 
 .hero {
