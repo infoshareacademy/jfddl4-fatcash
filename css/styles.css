@@ -424,22 +424,57 @@ label[for="nav-trigger"]:hover {
     display: block;
     width: 100%;
     text-align: center;
-    font-size: 6em;
+    font-size: 8em;
 }
 
 
 .header__h2
 {
-    top:25%;
+    top:30%;
     width: 100%;
     text-align: center;
     position:absolute;
    z-index: 1;
-    font-size: 1.8em;
+    font-size:2em;
     letter-spacing: 0.2em;
 }
 
 
+.header__link
+{
+
+
+    position:absolute;
+    z-index: 1;
+   text-align: center;
+    top:60%;
+   margin: 0;
+    transform: translateX(-50%);
+    left: 50%;
+    padding:1.5em 3em;
+    color: black;
+    background-color: #75d7da;
+    border: none;
+    border-radius: 10%;
+    font-size:2em;
+}
+
+
+
+.carousel-wrapper
+{
+
+    overflow: hidden;
+    height: calc(100vh - 200px);
+
+}
+
+.carousel
+{
+
+    height: 100%;
+
+}
 
 
 .hero {
@@ -509,9 +544,9 @@ label[for="nav-trigger"]:hover {
 
 }
 
-.hero__button-link:hover {
+.header__link:hover {
 
-    /*filter: brightness(120%);*/
+
     cursor: pointer;
     background-color: #51c5c9;
     color: white;
