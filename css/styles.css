@@ -482,7 +482,7 @@ label[for="nav-trigger"]:hover {
 
     background-image: url("../img/animplash3.jpg");
     background-size: cover;
-    background-position: bottomr;
+    background-position: bottom;
     opacity: 0.7;
 }
 
