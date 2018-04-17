@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="Shortcut icon" href="img/favicon.png">
+    <link rel="Shortcut icon" href="img/wallet01.png.png" >
     <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
@@ -13,46 +13,49 @@
     <title>Planer Finansów - Fat Cash</title>
 
 </head>
-<body>
-git
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
 
 <!-- MENU -->
+<section id="menu__top-background">
+    <div class="menu__top">
+        <p class ="menu__top__lang">Version: <a href="index.html">EN</a> | <a href="index2.html">PL</a></p>
+    </div>
+</section>
 
-
-<nav class="main-nav-desktop">
+<nav class="navbar navbar-dark main-nav-desktop ">
 
     <a href="" class="main-nav__logo">
         <img id="main-nav__logo-img" src="img/wallet01.png" alt="FatCash logo">
     </a>
-    <ul class="main-nav-desktop__list">
-        <li><a href="#hero" class="main-nav-desktop__list-btn">FAT CASH-APLIKACJA</a></li>
-        <li><a href="#features" class="main-nav-desktop__list-btn">FUNKCJE</a></li>
-        <li><a href="#info" class="main-nav-desktop__list-btn">INFORMACJE</a></li>
-        <li><a href="#team" class="main-nav-desktop__list-btn">AUTORZY</a></li>
-        <li><a href="#signup" class="main-nav-desktop__list-btn">ZAPISZ SIĘ</a></li>
-        <li><a href="#content" class="main-nav-desktop__list-btn">KONTAKT</a></li>
+    <ul class=" nav nav-pills d-none d-md-flex">
+        <li class="nav-item"><a href="#heronav" class="nav-link">FAT CASH-APLIKACJA</a></li>
+        <li class="nav-item"><a href="#features" class="nav-link">FUNKCJE</a></li>
+        <li class="nav-item"><a href="#info" class="nav-link">INFORMACJE</a></li>
+        <li class="nav-item"><a href="#team" class="nav-link">AUTORZY</a></li>
+        <li class="nav-item"><a href="#signup" class="nav-link">ZAPISZ SIĘ</a></li>
     </ul>
-</nav>
 
-<div class="main-nav-mobile">
-    <input type="checkbox" id="nav-trigger" class="nav-trigger">
-    <label id="menuText" class="uppercase noselect" for="nav-trigger">menu
-        <a class="cmn-toggle-switch cmn-toggle-switch__htx">
-            <span></span>
-        </a>
-    </label>
-    <div class="slide-menu">
-        <ul>
-            <li class="selected"><a href="#hero">FAT CASH APLIKACJA</a></li>
-            <li><a href="#features">FUNKCJE</a></li>
-            <li><a href="#info">INFO</a></li>
-            <li><a href="#team">AUTORZY</a></li>
-            <li><a href="#signup">ZAPISZ SIĘ</a></li>
-            <li><a href="#content">KONTAKT</a></li>
-        </ul>
+    <div class="main-nav-mobile">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger">
+        <label id="menuText" class="uppercase noselect" for="nav-trigger">menu
+            <a class="cmn-toggle-switch cmn-toggle-switch__htx">
+                <span></span>
+            </a>
+        </label>
+        <div class="slide-menu">
+            <ul>
+                <li><a href="#hero">FAT CASH APLIKACJA</a></li>
+                <li><a href="#features">FUNKCJE</a></li>
+                <li><a href="#info">INFORMACJE</a></li>
+                <li><a href="#team">AUTORZY</a></li>
+                <li><a href="#signup">ZAPISZ SIĘ</a></li>
+            </ul>
 
+        </div>
     </div>
-</div>
+
+</nav>
 
 
 <!-- /MENU -->
@@ -65,14 +68,15 @@ git
     <div class="hero" id="heronav">
 
         <div class="hero__header-wrapper__h">
-            <h1 class="hero__header--h1">Fatcash</h1>
-            <h2 class="hero__h2">Nowoczesny planer finansów.<br><br>
-                <h4 style="text-align: center">Oszczędzaj z nami!</h4>
+            <h1 class="hero__header--h1"> Fatcash</h1>
+            <h2 class="hero__h2">Interaktywny planner finansów <br><br>
+                Oszczędzaj z nami!
             </h2>
         </div>
 
 
         <div class="hero__button"><a href="#signup" class="hero__button-link">Zapisz się</a></div>
+
 
 
     </div>
@@ -91,28 +95,28 @@ git
                 <h3>SALDO</h3>
                 <img src="img/ic_fingerprint_black_24px.svg">
                 <div>
-                    ŚLEDZ STAN SWOJEGO PORTFELA.
+                    ŚLEDZ STAN SWOJEGO PORTFELA
                 </div>
             </div>
             <div class="col-6 col-md-3 text-center mb-3">
                 <h3>REDUKCJA</h3>
                 <img src="img/ic_lock_outline_black_24px.svg">
                 <div>
-                    ZREDUKUJ NIEPOTRZEBNE WYDATKI.
+                    ZREDUKUJ NIEPOTRZEBNE WYDATKI
                 </div>
             </div>
             <div class="col-6 col-md-3 text-center mb-3">
                 <h3>ALARM</h3>
                 <img src="img/ic_trending_up_black_24px.svg">
                 <div>
-                    MIEJ POD KONTROLĄ SWOJE RACHUNKI.
+                    MIEJ POD KONTROLĄ SWOJE RACHUNKI
                 </div>
             </div>
             <div class="col-6 col-md-3 text-center mb-3">
                 <h3>PLAN</h3>
                 <img src="img/ic_shopping_cart_black_24px.svg">
                 <div>
-                    ZAPLANUJ WYDATKI NA CALY MIESIĄC.
+                    ZAPLANUJ WYDATKI NA CALY MIESIĄC
                 </div>
             </div>
         </div>
@@ -129,13 +133,13 @@ git
                 <div class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="img/animplash1.jpg" alt="First slide">
+                            <img class="d-block w-100 boro" src="img/animplash1.jpg" alt="First slide">
                             <h5>
                                 <center></center>
                             </h5>
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="img/animplash2.jpg" alt="Second slide">
+                            <img class="d-block w-100 boro" src="img/animplash2.jpg" alt="Second slide">
                             <h5>
                                 <center></center>
                             </h5>
@@ -163,13 +167,13 @@ git
                 <div class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="img/animplash3.jpg" alt="First slide">
+                            <img class="d-block w-100 boro" src="img/animplash3.jpg" alt="First slide">
                             <h5>
                                 <center></center>
                             </h5>
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="img/animplash4.jpg" alt="Second slide">
+                            <img class="d-block w-100 boro" src="img/animplash4.jpg" alt="Second slide">
                             <h5>
                                 <center></center>
                             </h5>
@@ -181,13 +185,13 @@ git
                 <div class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="img/animplash5.jpg" alt="First slide">
+                            <img class="d-block w-100 boro" src="img/animplash5.jpg" alt="First slide">
                             <h5>
                                 <center></center>
                             </h5>
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="img/animplash6.jpg" alt="Second slide">
+                            <img class="d-block w-100 boro" src="img/animplash6.jpg" alt="Second slide">
                             <h5>
                                 <center></center>
                             </h5>
@@ -214,13 +218,13 @@ git
                 <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="img/animplash7.jpg" alt="First slide">
+                            <img class="d-block w-100 boro" src="img/animplash7.jpg" alt="First slide">
                             <h5>
                                 <center></center>
                             </h5>
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="img/animplash8.jpg" alt="Second slide">
+                            <img class="d-block w-100 boro" src="img/animplash8.jpg" alt="Second slide">
                             <h5>
                                 <center></center>
                             </h5>
@@ -232,87 +236,84 @@ git
     </div>
 </section>
 <!-- /INFO-->
+<!-- /TEAM -->
 
-<!-- TEAM -->
-<h2 class="team-features__heading text-center">INFORMACJA O AUTORACH</h2>
+<h2 class="team-features__heading text-center">OUR TEAM</h2>
 <section id="team">
     <div class="container">
 
         <div class="row">
             <div class="col-6 col-md-3 text-center mb-3">
 
-                <img class="img-fluid rounded-circle" src="img/Artur.jpg"><img>
+                <img class="team-member img-fluid rounded-circle brd" src="img/Artur.jpg"><img>
                 <h3 class="pt-3 pb-3">Artur Miłkowski</h3>
 
                 <div class="row">
                     <div class="col-6">
-                        <a href="http://www.facebook.pl"><img class="img-fluid mr-auto ml-auto h-50"
-                                                              src="img/facebook-app-logo.svg"></a>
+                        <a href="http://www.facebook.pl"><img class="img-fluid mr-auto ml-auto h-50" src="img/facebook-app-logo.svg"></a>
                     </div>
                     <div class="col-6">
-                        <a href="http://www.facebook.pl"><img class="img-fluid mr-auto ml-auto h-50"
-                                                              src="img/internet.svg"></a>
+                        <a href="http://www.facebook.pl"><img class="img-fluid mr-auto ml-auto h-50" src="img/internet.svg"></a>
                     </div>
                 </div>
+                <section id="signup"></section>
                 <div>
                     Dostosowanie funkcjonalności do aktualnych potrzeb użytkowników wymagało dokodnej analizy i wprowadzenia wielu rewolucyjnych zmian. Dzięki temu finalny produkt zyskał wiele funkcjonalności.
+
                 </div>
             </div>
             <div class="col-6 col-md-3 text-center mb-3">
 
-                <img class="img-fluid rounded-circle" src="img/Jan.jpg"><img>
+                <img class="team-member img-fluid rounded-circle brd" src="img/Jan.jpg"><img>
                 <h3 class="pt-3 pb-3">Jan Choma</h3>
 
                 <div class="row">
                     <div class="col-6">
-                        <a href="http://www.facebook.pl"><img class="img-fluid mr-auto ml-auto h-50"
-                                                              src="img/facebook-app-logo.svg"></a>
+                        <a href="http://www.facebook.pl"><img class="img-fluid mr-auto ml-auto h-50" src="img/facebook-app-logo.svg"></a>
                     </div>
                     <div class="col-6">
-                        <a href="http://www.facebook.pl"><img class="img-fluid mr-auto ml-auto h-50"
-                                                              src="img/internet.svg"></a>
+                        <a href="http://www.facebook.pl"><img class="img-fluid mr-auto ml-auto h-50" src="img/internet.svg"></a>
                     </div>
                 </div>
                 <div>
                     Czekamy na Państwa propozycje i sugestie dotyczące programu. Ciągle trwają prace nad programem dostosowując go do potrzeb użytkowników. Najnowsze wersje programu oraz szersze informacje już w krótce!
+
                 </div>
             </div>
             <div class="col-6 col-md-3 text-center mb-3">
 
-                <img class="img-fluid rounded-circle" src="img/PawelT.jpg"><img>
+                <img class="team-member img-fluid rounded-circle brd" src="img/PawelT.jpg"><img>
                 <h3 class="pt-3 pb-3">Paweł Tarka</h3>
 
                 <div class="row">
                     <div class="col-6">
-                        <a href="http://www.facebook.pl"><img class="img-fluid mr-auto ml-auto h-50"
-                                                              src="img/facebook-app-logo.svg"></a>
+                        <a href="http://www.facebook.pl"><img class="img-fluid mr-auto ml-auto h-50" src="img/facebook-app-logo.svg"></a>
                     </div>
                     <div class="col-6">
-                        <a href="http://www.facebook.pl"><img class="img-fluid mr-auto ml-auto h-50"
-                                                              src="img/internet.svg"></a>
+                        <a href="http://www.facebook.pl"><img class="img-fluid mr-auto ml-auto h-50" src="img/internet.svg"></a>
                     </div>
                 </div>
                 <div>
                     Cenimy sobie każdą Waszą opinię zostawioną na naszym fanpage'u Fat Cash. Wszystkie czytamy bardzo skrupulatnie i każdą waszą wskazówkę bierzemy sobie do serca, wsłuchująć się we wszystkie propozycje.
+
                 </div>
             </div>
             <div class="col-6 col-md-3 text-center mb-3">
 
-                <img class="img-fluid rounded-circle" src="img/PawelP.jpg"><img>
+                <img class="team-member img-fluid rounded-circle brd" src="img/PawelP.jpg"><img>
                 <h3 class="pt-3 pb-3">Paweł Polit</h3>
 
                 <div class="row">
                     <div class="col-6">
-                        <a href="http://www.facebook.pl"><img class="img-fluid mr-auto ml-auto h-50"
-                                                              src="img/facebook-app-logo.svg"></a>
+                        <a href="http://www.facebook.pl"><img class="img-fluid mr-auto ml-auto h-50" src="img/facebook-app-logo.svg"></a>
                     </div>
                     <div class="col-6">
-                        <a href="http://www.facebook.pl"><img class="img-fluid mr-auto ml-auto h-50"
-                                                              src="img/internet.svg"></a>
+                        <a href="http://www.facebook.pl"><img class="img-fluid mr-auto ml-auto h-50" src="img/internet.svg"></a>
                     </div>
                 </div>
                 <div>
                     Zapraszamy do śledzenia nas na Facebooku i Google+! Zapraszamy do odwiedzenia i polubienia naszej strony na Facebook'u Wszystkich sympatyków zapraszamy do obserwowania nas także na Instragramie!
+
 
                 </div>
             </div>
@@ -320,6 +321,9 @@ git
     </div>
 </section>
 <!-- /TEAM -->
+
+
+
 
 <!-- SIGNUP -->
 <section id="signup"></section>
@@ -341,7 +345,6 @@ git
     </form>
 </div>
 <!-- /SIGNUP -->
-
 <!-- FOOTER -->
 <section id="footer-background">
     <div class="footer container">
@@ -362,6 +365,7 @@ git
 <!--/CW-->
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/bootstrap.bundle.js"></script>
+<script src="js/in-view.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
