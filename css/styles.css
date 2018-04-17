@@ -705,6 +705,8 @@ input[type=checkbox] {
   border-bottom-right-radius: 1.5vh;
   border-top-left-radius: 1.5vh;
   border-top-right-radius: 1.5vh;
+    border: 2px solid;
+    border-color: white;
 }
 .button__top__link:hover {
     color: white;
