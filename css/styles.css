@@ -551,6 +551,7 @@ label[for="nav-trigger"]:hover {
     margin-bottom: 1rem;
     padding-top: 2em;
     padding-bottom: 2em;
+    border: 2px solid rgba(235,236,239,0.51);
 }
 
 .container {
