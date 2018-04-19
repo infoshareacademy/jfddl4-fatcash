@@ -4,21 +4,21 @@ var deckOfCards = [
     {
         front: 'A',
         visible: false,
-        complete: true
+        complete: false
     },
     {
         front: 'A',
-        visible: true,
-        complete: true
-    },
-    {
-        front: 'B',
-        visible: true,
+        visible: false,
         complete: false
     },
     {
         front: 'B',
-        visible: true,
+        visible: false,
+        complete: false
+    },
+    {
+        front: 'B',
+        visible: false,
         complete: false
     },
     {
@@ -45,7 +45,37 @@ var moves_clicks = 0
 
 //FUNKCJE
 
-function createCard(card) {
+function buttonStart () {
+    document.getElementById('start')
+        .addEventListener('click', function(){
+
+            render(gameBoard, deckOfCardsGAME);});
+
+
+    document.getElementById('instrukcja')
+        .addEventListener('click', function(){
+
+            console.log("Naciśnięto Instukcja");});
+
+
+
+    document.getElementById('wyniki')
+        .addEventListener('click', function()
+        {
+
+            console.log("Naciśnięto Wyniki");});
+
+
+
+    document.getElementById('zamknij')
+        .addEventListener('click', function(){
+
+            console.log("Naciśnięto Zamknij");});
+
+}
+
+
+function createCard(card, i) {
     var div = document.createElement('div')
     var span = document.createElement('span')
     div.appendChild(span)
@@ -59,7 +89,15 @@ function createCard(card) {
         case false:
             div.classList.add('cardback')
             div.setAttribute('onclick', '')
-            div.addEventListener('click', function () {makeVisible(card)})
+            div.addEventListener('click', function () {
+                // makeVisible(card)
+                // console.log(deckOfCardsGAME)
+                // stan_Gry()
+                // countVisibleCards()
+                // console.log(deckOfCardsGAME)
+                flipCard(i)
+
+            })
             break
         case true:
             div.classList.add('cardfront')
@@ -71,10 +109,10 @@ function createCard(card) {
 }
 
 function render(board, cards) {
-    board.innerHTML = ''
+    gameBoard.innerHTML = ''
 
-    deckOfCardsAfterShuffle.forEach(function (card) {
-        board.appendChild(createCard(card))
+    deckOfCardsGAME.forEach(function (card, i) {
+        gameBoard.appendChild(createCard(card, i))
     })
 }
 
@@ -95,16 +133,61 @@ function shuffleCards(arr) {
 }
 
 function makeVisible (card) {
+
     card.visible = true
-    console.log(deckOfCardsAfterShuffle)
+    // console.log(deckOfCardsAfterShuffle)
+    console.log(deckOfCardsGAME)
     render(gameBoard, deckOfCardsGAME)
     moves_clicks++
-    console.log(moves_clicks)
+    // console.log(moves_clicks)
+
+
 }
+
+// function stan_Gry() {
+//     countVisibleCards()
+//     flipCard()
+// }
+
+function countVisibleCards() {
+    var visibleCardsCount = deckOfCardsGAME.filter(function (el) {
+        return el.visible === true && el.complete === false
+    }).length
+    // console.log(deckOfCardsGAME)
+
+    return visibleCardsCount
+}
+
+
+function hideAllVisbleCards() {
+    deckOfCardsGAME = deckOfCardsGAME.map(function (el) {
+        if (el.complete === true)
+            return el
+        else
+            return Object.assign({}, el, {visible: false})
+    })
+
+    return deckOfCardsGAME
+}
+
+function flipCard(index) {
+    if(countVisibleCards() > 1){
+        hideAllVisbleCards()
+    }
+
+    deckOfCardsGAME[index] =  Object.assign({}, deckOfCardsGAME[index], {visible: true})
+
+    render()
+
+    return deckOfCardsGAME
+}
+
+
 
 //FUNKCJE - KONIEC
 
 //WYWOłANIE GRY
 
-render(gameBoard, deckOfCardsAfterShuffle)
+// render(gameBoard, deckOfCardsAfterShuffle)
 
+buttonStart()

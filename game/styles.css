@@ -50,3 +50,25 @@
     color: grey;
     text-align: center;
 }
+
+
+/* Paweł Styles*/
+
+
+button {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    background-color: #75d7da !important;
+    color:black !important;
+    border: 1px;
+}
+
+
+#game_option
+{
+    display:flex;
+    justify-content: center;
+    width: 80vw;
+    margin:50px auto 50px auto;
+    border: 2px solid black;
+}
+
