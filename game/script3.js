@@ -30,6 +30,11 @@ var deckOfCards = [
         front: 'C',
         visible: false,
         complete: false
+    },
+    {
+        front: 'D',
+        visible: false,
+        complete: false
     }
 ]
 
@@ -40,6 +45,8 @@ var deckOfCardsAfterShuffle = shuffleCards(deckOfCards)
 var deckOfCardsGAME = JSON.parse(JSON.stringify(deckOfCardsAfterShuffle))
 
 var moves_clicks = 0
+
+var compereCards = []
 
 // ZMIENNE -KONIEC
 
@@ -95,7 +102,10 @@ function createCard(card, i) {
                 // stan_Gry()
                 // countVisibleCards()
                 // console.log(deckOfCardsGAME)
+
+                // makeCompleted()
                 flipCard(i)
+                makeCompleted()
 
             })
             break
@@ -144,10 +154,7 @@ function makeVisible (card) {
 
 }
 
-// function stan_Gry() {
-//     countVisibleCards()
-//     flipCard()
-// }
+
 
 function countVisibleCards() {
     var visibleCardsCount = deckOfCardsGAME.filter(function (el) {
@@ -157,6 +164,43 @@ function countVisibleCards() {
 
     return visibleCardsCount
 }
+
+
+function makeCompleted () {
+    if(countVisibleCards() > 1) {
+        var visibleCards = []
+        var frontComplete = ''
+        function asd() {
+            visibleCards = deckOfCardsGAME.filter(function (el) {
+                return el.visible == true
+            })
+        }
+        asd()
+        if (visibleCards[0].front == visibleCards[1].front) {
+            frontComplete = visibleCards[0].front
+            console.log(frontComplete)
+        }
+        deckOfCardsGAME.forEach(function (card) {
+            if (card.front == frontComplete) {
+                card.complete = true
+            }
+        })
+    }
+}
+
+
+
+// var visibleCards = []
+// function asd() {
+//     visibleCards = deckOfCardsGAME.filter(function (el) {
+//         return el.visible == true
+//     })
+// }
+//
+// var front_complite = ''
+// if (visibleCards[0].front == visibleCards[1].front) {var front_complite = visibleCards[0].front}
+//
+// deckOfCardsGAME.forEach(function(card) {if (card.front == front_complite) {card.complite = true}})
 
 
 function hideAllVisbleCards() {
@@ -169,6 +213,8 @@ function hideAllVisbleCards() {
 
     return deckOfCardsGAME
 }
+
+
 
 function flipCard(index) {
     if(countVisibleCards() > 1){
@@ -191,3 +237,5 @@ function flipCard(index) {
 // render(gameBoard, deckOfCardsAfterShuffle)
 
 buttonStart()
+
+
