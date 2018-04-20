@@ -146,7 +146,7 @@ function createCard(card, i) {
                 // countVisibleCards()
                 // console.log(deckOfCardsGAME)
                 flipCard(i)
-                itIsTheSame(i)
+                itIsTheSame()
                 console.log(deckOfCardsGAME)
 
             })
@@ -236,27 +236,26 @@ function flipCard(index) {
 
 //
 //
-function itIsTheSame(index){
+function itIsTheSame(){
 
-    var seen = {};
-    var hasDuplicatesInVisible = deckOfCardsGAME.some(function(currentObject) {
-if (currentObject.visible===true) {
-    if (seen.hasOwnProperty(currentObject.front)) {
-
-        return true;
+    var trueOrFalse = {};
+   deckOfCardsGAME.some(function(el) {
+if (el.visible===true ) {
+    if (trueOrFalse.hasOwnProperty(el.front)) {
+console.log(trueOrFalse)
+        return el.complete = true, el.visible = false;
     }
 
-    // Current name is being seen for the first time
-    return (seen[currentObject.front] = false);
+    return (trueOrFalse[el.front] = false);
 }
     })
 
-    deckOfCardsGAME.map(function (el){
-
-        if (hasDuplicatesInVisible === true)
-            deckOfCardsGAME[index] =  Object.assign({}, deckOfCardsGAME[index], {complete: true, visible: false})
-
-    })
+    // deckOfCardsGAME.map(function (el){
+    //
+    //     if (hasDuplicatesInVisible === true)
+    //         deckOfCardsGAME[index] =  Object.assign({}, deckOfCardsGAME[index], {complete: true, visible: false})
+    //
+    // })
     render()
 }
 
