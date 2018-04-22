@@ -186,6 +186,7 @@ var deckOfCardsLevel2 = [
         complete: false
     }
 ]
+
 var gameBoard = document.getElementById('game-board-id')
 
 // var deckOfCardsAfterShuffle = shuffleCards(deckOfCards)
@@ -199,13 +200,16 @@ deckOfCardsGAME = deckOfCards.concat(deckOfCardsLevel2)
 // deckOfCardsGAME = shuffleCards(deckOfCardsGAME)
 }
 
+var moves_clicks = 1
+function mouseClick() {
+    var clicks =document.getElementById("clicks").innerHTML = "Twoje ruchy: " + moves_clicks
+    moves_clicks++
 
+}
 
 var level = 1
 
 var pairCount = 0
-
-var moves_clicks = 0
 
 
 function buttonStart() {
@@ -254,9 +258,10 @@ function createCard(card, i) {
                 div.setAttribute('onclick', '')
                 div.addEventListener('click', function () {
 
-
+                    console.log(moves_clicks)
                     flipCard(i)
                     cardCompare()
+                    mouseClick()
 
 
                 })
@@ -271,6 +276,42 @@ function createCard(card, i) {
 }
 
 
+function createCardLevel2(card, i) {
+    var div = document.createElement('div')
+    var span = document.createElement('span')
+    div.appendChild(span)
+    span.innerText = card.front
+    div.classList.remove('cardfront')
+    div.classList.remove('complete')
+
+    if (card.complete == true) {
+        div.classList.add('complete-l2')
+    } else {
+
+        switch (card.visible) {
+            case false:
+
+                div.classList.add('cardback-l2')
+                div.setAttribute('onclick', '')
+                div.addEventListener('click', function () {
+
+                    console.log(moves_clicks)
+                    flipCard(i)
+                    cardCompare()
+                    mouseClick()
+
+
+
+                })
+                break
+            case true:
+                div.classList.add('cardfront-l2')
+                break
+        }
+    }
+    return div
+
+}
 
 function render(card, i) {
     gameBoard.innerHTML = ''
@@ -381,40 +422,6 @@ function flipCard(index) {
     }
 }
 
-function createCardLevel2(card, i) {
-    var div = document.createElement('div')
-    var span = document.createElement('span')
-    div.appendChild(span)
-    span.innerText = card.front
-    div.classList.remove('cardfront')
-    div.classList.remove('complete')
-
-    if (card.complete == true) {
-        div.classList.add('complete-l2')
-    } else {
-
-        switch (card.visible) {
-            case false:
-
-                div.classList.add('cardback-l2')
-                div.setAttribute('onclick', '')
-                div.addEventListener('click', function () {
-
-                    console.log(level)
-                    flipCard(i)
-                    cardCompare()
-
-
-                })
-                break
-            case true:
-                div.classList.add('cardfront-l2')
-                break
-        }
-    }
-    return div
-
-}
 
 
 

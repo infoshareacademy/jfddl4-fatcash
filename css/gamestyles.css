@@ -13,6 +13,11 @@
 
 
 
+#clicks{
+    text-align: center;
+    font-size: 2rem;
+}
+
 .cardback {
     width: 17%;
     height: 17%;
