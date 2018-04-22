@@ -186,18 +186,18 @@ var deckOfCardsLevel2 = [
         complete: false
     }
 ]
-
+var modalScore = document.getElementById("modalScore")
 var gameBoard = document.getElementById('game-board-id')
 
-// var deckOfCardsAfterShuffle = shuffleCards(deckOfCards)
+var deckOfCardsAfterShuffle = shuffleCards(deckOfCards)
 
-var deckOfCardsGAME = JSON.parse(JSON.stringify(deckOfCards))
+var deckOfCardsGAME = JSON.parse(JSON.stringify(deckOfCardsAfterShuffle))
 
 function cardsForLevel2() {
 
     deckOfCardsGAME = deckOfCards.concat(deckOfCardsLevel2)
 
-// deckOfCardsGAME = shuffleCards(deckOfCardsGAME)
+deckOfCardsGAME = shuffleCards(deckOfCardsGAME)
 }
 
 var moves_clicks = 1
@@ -218,28 +218,14 @@ var pairCount = 0
 function buttonStart() {
     document.getElementById('start')
         .addEventListener('click', function () {
-            render();
+            if(level===1){
+            render();}
+            else renderLevel2()
         });
 
-
-    document.getElementById('instrukcja')
+    document.getElementById('wynik')
         .addEventListener('click', function () {
-
-            console.log("Naciśnięto Instukcja");
-        });
-
-
-    document.getElementById('wyniki')
-        .addEventListener('click', function (x) {
-
             checkScore()
-        });
-
-
-    document.getElementById('zamknij')
-        .addEventListener('click', function () {
-
-            console.log("Naciśnięto Zamknij");
         });
 
 }
@@ -316,6 +302,7 @@ function createCardLevel2(card, i) {
 }
 
 function render(card, i) {
+
     gameBoard.innerHTML = ''
     deckOfCardsGAME.forEach(function (card, i) {
         gameBoard.appendChild(createCard(card, i))
@@ -438,9 +425,9 @@ function endGame() {
             level = 2
             renderLevel2()
         }
-        else
+        else{
             sendScore();
-        alert("ukończyłeś grę ! " + "Twój wynik to " + moves_clicks)
+        alert("ukończyłeś grę ! " + "Twój wynik to " + moves_clicks)}
     }
 
 }
@@ -468,13 +455,12 @@ function checkScore() {
 
     if (bestScore === null) {
 
-        alert(" Upss. It seems there is no any highscores yet.")
+        modalScore.innerHTML = " Upss. Wygląda na to że jeszcze nie ma żadnych wyników."
 
     }
     else {
 
-        alert("Highscore: " + bestScore)
-
+        modalScore.innerHTML = "Dotychczas najlepszy wynik jaki osiągnięto to:  " + bestScore
     }
 
 }
