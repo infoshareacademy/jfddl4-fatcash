@@ -40,47 +40,148 @@ var deckOfCards = [
         front: 'D',
         visible: false,
         complete: false
+    },
+    {
+        front: 'E',
+        visible: false,
+        complete: false
+    },
+    {
+        front: 'E',
+        visible: false,
+        complete: false
+    },
+    {
+        front: 'F',
+        visible: false,
+        complete: false
+    },
+    {
+        front: 'F',
+        visible: false,
+        complete: false
+    },
+    {
+        front: 'G',
+        visible: false,
+        complete: false
+    },
+    {
+        front: 'G',
+        visible: false,
+        complete: false
+    },
+    {
+        front: 'H',
+        visible: false,
+        complete: false
+    },
+    {
+        front: 'H',
+        visible: false,
+        complete: false
     }
+
 ]
 
 var deckOfCardsLevel2 = [
     {
-        front: 'E',
+        front: 'I',
         visible: false,
         complete: false
     },
     {
-        front: 'E',
+        front: 'I',
         visible: false,
         complete: false
     },
     {
-        front: 'F',
+        front: 'J',
         visible: false,
         complete: false
     },
     {
-        front: 'F',
+        front: 'J',
         visible: false,
         complete: false
     },
     {
-        front: 'G',
+        front: 'K',
         visible: false,
         complete: false
     },
     {
-        front: 'G',
+        front: 'K',
         visible: false,
         complete: false
     },
     {
-        front: 'H',
+        front: 'L',
         visible: false,
         complete: false
     },
     {
-        front: 'H',
+        front: 'L',
+        visible: false,
+        complete: false
+    },
+      {
+        front: 'M',
+        visible: false,
+        complete: false
+    },
+    {
+        front: 'M',
+        visible: false,
+        complete: false
+    },
+    {
+        front: 'N',
+        visible: false,
+        complete: false
+    },
+    {
+        front: 'N',
+        visible: false,
+        complete: false
+    },
+    {
+        front: 'O',
+        visible: false,
+        complete: false
+    },
+    {
+        front: 'O',
+        visible: false,
+        complete: false
+    },
+    {
+        front: 'P',
+        visible: false,
+        complete: false
+    },
+    {
+        front: 'P',
+        visible: false,
+        complete: false
+    },
+       {
+        front: 'R',
+        visible: false,
+        complete: false
+    },
+    {
+        front: 'R',
+        visible: false,
+        complete: false
+    },
+    {
+        front: 'S',
+        visible: false,
+        complete: false
+    },
+    {
+        front: 'S',
         visible: false,
         complete: false
     }
@@ -256,21 +357,64 @@ function flipCard(index) {
 
 }
 
+function createCardLevel2(card, i) {
+    var div = document.createElement('div')
+    var span = document.createElement('span')
+    div.appendChild(span)
+    span.innerText = card.front
+
+    if (card.complete == true) {
+        div.classList.add('complete-l2')
+    } else {
+
+        switch (card.visible) {
+            case false:
+                div.classList.add('cardback-l2')
+                div.setAttribute('onclick', '')
+                div.addEventListener('click', function () {
+
+
+                    flipCard(i)
+                    cardCompare()
+
+
+                })
+                break
+            case true:
+                div.classList.add('cardfront-l2')
+                break
+        }
+    }
+    return div
+
+}
+
 function renderLevel2(card, i) {
+
+
+
     gameBoard.innerHTML = ''
-   deckOfCardsGAME = deckOfCards.concat(deckOfCardsLevel2)
+
+    deckOfCardsGAME = deckOfCards.concat(deckOfCardsLevel2)
     deckOfCardsGAME = shuffleCards(deckOfCardsGAME)
     deckOfCardsGAME.forEach(function (card, i) {
-        gameBoard.appendChild(createCard(card, i))
+        gameBoard.appendChild(createCardLevel2(card, i))
+
     })
-    console.log('render')
+       console.log('render')
 }
 
 function endGame() {
-    if (pairCount == deckOfCardsGAME.length/2) {
-       console.warn(pairCount)
-        console.warn(deckOfCardsGAME)
-        renderLevel2()
+
+    if (pairCount == deckOfCardsGAME.length / 2) {
+        if (pairCount < 16) {
+            pairCount = 0
+            console.warn(pairCount)
+            console.warn(deckOfCardsGAME)
+            renderLevel2()
+        }
+        else
+            alert("ukończyłeś grę ! " + "Twój wynik to " + moves_clicks)
     }
 
 }
