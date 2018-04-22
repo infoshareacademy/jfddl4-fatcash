@@ -43,6 +43,48 @@ var deckOfCards = [
     }
 ]
 
+var deckOfCardsLevel2 = [
+    {
+        front: 'E',
+        visible: false,
+        complete: false
+    },
+    {
+        front: 'E',
+        visible: false,
+        complete: false
+    },
+    {
+        front: 'F',
+        visible: false,
+        complete: false
+    },
+    {
+        front: 'F',
+        visible: false,
+        complete: false
+    },
+    {
+        front: 'G',
+        visible: false,
+        complete: false
+    },
+    {
+        front: 'G',
+        visible: false,
+        complete: false
+    },
+    {
+        front: 'H',
+        visible: false,
+        complete: false
+    },
+    {
+        front: 'H',
+        visible: false,
+        complete: false
+    }
+]
 var gameBoard = document.getElementById('game-board-id')
 
 var deckOfCardsAfterShuffle = shuffleCards(deckOfCards)
@@ -216,7 +258,8 @@ function flipCard(index) {
 
 function renderLevel2(card, i) {
     gameBoard.innerHTML = ''
-   deckOfCardsGAME = deckOfCards.slice(deckOfCardsGAME.length/2)
+   deckOfCardsGAME = deckOfCards.concat(deckOfCardsLevel2)
+    deckOfCardsGAME = shuffleCards(deckOfCardsGAME)
     deckOfCardsGAME.forEach(function (card, i) {
         gameBoard.appendChild(createCard(card, i))
     })
@@ -225,7 +268,8 @@ function renderLevel2(card, i) {
 
 function endGame() {
     if (pairCount == deckOfCardsGAME.length/2) {
-        alert('Level 1 completed. Time to level 2...')
+       console.warn(pairCount)
+        console.warn(deckOfCardsGAME)
         renderLevel2()
     }
 
