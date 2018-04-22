@@ -43,6 +43,7 @@ var deckOfCards = [
     }
 ]
 
+
 var gameBoard = document.getElementById('game-board-id')
 
 var deckOfCardsAfterShuffle = shuffleCards(deckOfCards)
@@ -77,9 +78,9 @@ function buttonStart() {
 
 
     document.getElementById('wyniki')
-        .addEventListener('click', function () {
+        .addEventListener('click', function (x) {
 
-            console.log("Naciśnięto Wyniki");
+            checkScore()
         });
 
 
@@ -197,6 +198,9 @@ function hideAllVisbleCards() {
 
 
 function flipCard(index) {
+
+    moves_clicks++;
+
     if (countVisibleCards() > 1) {
         hideAllVisbleCards()
     }
@@ -219,6 +223,43 @@ function endLevel() {
     }
 
 }
+
+/////////////////////////  HIGHSCORES  //////////////////////////////
+
+function sendScore() {
+
+    var bestScore = localStorage.getItem('bestscore');
+
+
+    if (moves_clicks < bestScore || bestScore === null) {
+        localStorage.setItem('bestscore', moves_clicks);
+
+    }
+}
+
+
+function checkScore() {
+
+
+    var bestScore = localStorage.getItem('bestscore');
+
+
+    if (bestScore === null) {
+
+        alert(" Upss. It seems there is no any highscores yet.")
+
+    }
+    else {
+
+        alert("Highscore: " + bestScore)
+
+    }
+
+}
+
+
+////////////////////////////////////////////////////////////////
+
 
 //FUNKCJE - KONIEC
 

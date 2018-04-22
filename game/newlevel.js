@@ -260,6 +260,9 @@ function hideAllVisbleCards2() {
 
 
 function flipCard2(index2) {
+
+    moves_clicks++;
+
     if (countVisibleCards2() > 1) {
         hideAllVisbleCards2()
     }
@@ -276,10 +279,15 @@ function flipCard2(index2) {
 function endGame() {
 
     if (pairCount == 13) {
-        alert('You are awesome!!')
+
+        sendScore();
+
+
+        alert('Victory!!! Your score: ' + moves_clicks)
     }
 
 }
+
 
 //FUNKCJE - KONIEC
 
