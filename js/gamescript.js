@@ -125,7 +125,7 @@ var deckOfCardsLevel2 = [
         visible: false,
         complete: false
     },
-      {
+    {
         front: 'M',
         visible: false,
         complete: false
@@ -165,7 +165,7 @@ var deckOfCardsLevel2 = [
         visible: false,
         complete: false
     },
-       {
+    {
         front: 'R',
         visible: false,
         complete: false
@@ -187,10 +187,16 @@ var deckOfCardsLevel2 = [
     }
 ]
 var gameBoard = document.getElementById('game-board-id')
+//
+// var deckOfCardsAfterShuffle = shuffleCards(deckOfCards)
 
-var deckOfCardsAfterShuffle = shuffleCards(deckOfCards)
+var deckOfCardsGAME = JSON.parse(JSON.stringify(deckOfCards))
 
-var deckOfCardsGAME = JSON.parse(JSON.stringify(deckOfCardsAfterShuffle))
+function cardsForLevel2 (){
+
+deckOfCardsGAME = deckOfCards.concat(deckOfCardsLevel2)
+
+deckOfCardsGAME = shuffleCards(deckOfCardsGAME)}
 
 // function level() {
 //     if (pairCount <= 4) {
@@ -199,6 +205,7 @@ var deckOfCardsGAME = JSON.parse(JSON.stringify(deckOfCardsAfterShuffle))
 //     return deckOfCards
 // }
 
+var level = 1
 
 var pairCount = 0
 
@@ -272,12 +279,28 @@ function createCard(card, i) {
 
 }
 
+
+
 function render(card, i) {
     gameBoard.innerHTML = ''
     deckOfCardsGAME.forEach(function (card, i) {
         gameBoard.appendChild(createCard(card, i))
     })
     console.log('render')
+}
+
+function renderLevel2(card, i) {
+if (level==2){
+    cardsForLevel2 ()
+    level++
+}
+    gameBoard.innerHTML = ''
+    deckOfCardsGAME.forEach(function (card, i) {
+        gameBoard.appendChild(createCardLevel2(card, i))
+
+    })
+    console.log('renderLevel2')
+    console.log(deckOfCardsGAME)
 }
 
 function shuffleCards(arr) {
@@ -345,16 +368,26 @@ function hideAllVisbleCards() {
 
 
 function flipCard(index) {
-    if (countVisibleCards() > 1) {
-        hideAllVisbleCards()
+
+    if (level===1) {
+        if (countVisibleCards() > 1) {
+            hideAllVisbleCards()
+        }
+
+        deckOfCardsGAME[index] = Object.assign({}, deckOfCardsGAME[index], {visible: true})
+        render()
+
+        return deckOfCardsGAME
+    } else {
+        if (countVisibleCards() > 1) {
+            hideAllVisbleCards()
+        }
+
+        deckOfCardsGAME[index] = Object.assign({}, deckOfCardsGAME[index], {visible: true})
+        renderLevel2()
+
+        return deckOfCardsGAME
     }
-
-    deckOfCardsGAME[index] = Object.assign({}, deckOfCardsGAME[index], {visible: true})
-
-    render()
-
-    return deckOfCardsGAME
-
 }
 
 function createCardLevel2(card, i) {
@@ -362,6 +395,8 @@ function createCardLevel2(card, i) {
     var span = document.createElement('span')
     div.appendChild(span)
     span.innerText = card.front
+    div.classList.remove('cardfront')
+    div.classList.remove('complete')
 
     if (card.complete == true) {
         div.classList.add('complete-l2')
@@ -369,11 +404,12 @@ function createCardLevel2(card, i) {
 
         switch (card.visible) {
             case false:
+
                 div.classList.add('cardback-l2')
                 div.setAttribute('onclick', '')
                 div.addEventListener('click', function () {
 
-
+                    console.log(level)
                     flipCard(i)
                     cardCompare()
 
@@ -389,20 +425,7 @@ function createCardLevel2(card, i) {
 
 }
 
-function renderLevel2(card, i) {
 
-
-
-    gameBoard.innerHTML = ''
-
-    deckOfCardsGAME = deckOfCards.concat(deckOfCardsLevel2)
-    deckOfCardsGAME = shuffleCards(deckOfCardsGAME)
-    deckOfCardsGAME.forEach(function (card, i) {
-        gameBoard.appendChild(createCardLevel2(card, i))
-
-    })
-       console.log('render')
-}
 
 function endGame() {
 
@@ -411,6 +434,7 @@ function endGame() {
             pairCount = 0
             console.warn(pairCount)
             console.warn(deckOfCardsGAME)
+            level = 2
             renderLevel2()
         }
         else
