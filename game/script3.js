@@ -190,17 +190,6 @@ function makeCompleted () {
 
 
 
-// var visibleCards = []
-// function asd() {
-//     visibleCards = deckOfCardsGAME.filter(function (el) {
-//         return el.visible == true
-//     })
-// }
-//
-// var front_complite = ''
-// if (visibleCards[0].front == visibleCards[1].front) {var front_complite = visibleCards[0].front}
-//
-// deckOfCardsGAME.forEach(function(card) {if (card.front == front_complite) {card.complite = true}})
 
 
 function hideAllVisbleCards() {

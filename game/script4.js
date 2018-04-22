@@ -214,10 +214,19 @@ function flipCard(index) {
 
 }
 
+function renderLevel2(card, i) {
+    gameBoard.innerHTML = ''
+   deckOfCardsGAME = deckOfCards.slice(deckOfCardsGAME.length/2)
+    deckOfCardsGAME.forEach(function (card, i) {
+        gameBoard.appendChild(createCard(card, i))
+    })
+    console.log('render')
+}
+
 function endGame() {
-    if (pairCount == 4) {
+    if (pairCount == deckOfCardsGAME.length/2) {
         alert('Level 1 completed. Time to level 2...')
-        render()
+        renderLevel2()
     }
 
 }
