@@ -1,0 +1,74 @@
+#game-board-id {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 80vw;
+    height: 70vh;
+    border: 2px solid black;
+    margin: auto
+}
+
+.cardback {
+    width: 70px;
+    height: 70px;
+    min-width: 70px;
+    min-height: 70px;
+    background: black;
+    margin: 10px;
+    cursor:pointer;
+    box-sizing: border-box;
+    font-size: 0.1rem;
+}
+
+.cardback > span {
+    display: none;
+}
+
+.cardfront {
+    background: white;
+    border: 2px solid red;
+    width: 70px;
+    height: 70px;
+    min-width: 70px;
+    min-height: 70px;
+    box-sizing: border-box;
+    margin: 10px;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.complete {
+    background: white;
+    border: 2px solid grey;
+    width: 70px;
+    height: 70px;
+    min-width: 70px;
+    min-height: 70px;
+    box-sizing: border-box;
+    margin: 10px;
+    font-size: 3rem;
+    color: grey;
+    text-align: center;
+}
+
+
+/* Paweł Styles*/
+
+
+button {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    background-color: #75d7da !important;
+    color:black !important;
+    border: 1px;
+}
+
+
+#game_option
+{
+    display:flex;
+    justify-content: center;
+    width: 80vw;
+    margin:50px auto 50px auto;
+    border: 2px solid black;
+}
+
