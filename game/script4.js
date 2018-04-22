@@ -49,6 +49,15 @@ var deckOfCardsAfterShuffle = shuffleCards(deckOfCards)
 
 var deckOfCardsGAME = JSON.parse(JSON.stringify(deckOfCardsAfterShuffle))
 
+// function level() {
+//     if (pairCount <= 4) {
+//         deckOfCards = deckOfCards.slice(4)
+//     }
+//     return deckOfCards
+// }
+
+
+var pairCount = 0
 
 var moves_clicks = 0
 
@@ -61,8 +70,7 @@ var moves_clicks = 0
 function buttonStart() {
     document.getElementById('start')
         .addEventListener('click', function () {
-
-            render(gameBoard, deckOfCardsGAME);
+            render();
         });
 
 
@@ -104,14 +112,11 @@ function createCard(card, i) {
                 div.classList.add('cardback')
                 div.setAttribute('onclick', '')
                 div.addEventListener('click', function () {
-                    // makeVisible(card)
-                    // console.log(deckOfCardsGAME)
-                    // stan_Gry()
-                    // countVisibleCards()
-                    // console.log(deckOfCardsGAME)
+
 
                     flipCard(i)
                     cardCompare()
+
 
                 })
                 break
@@ -124,12 +129,12 @@ function createCard(card, i) {
 
 }
 
-function render(board, cards) {
+function render(card, i) {
     gameBoard.innerHTML = ''
-
     deckOfCardsGAME.forEach(function (card, i) {
         gameBoard.appendChild(createCard(card, i))
     })
+    console.log('render')
 }
 
 function shuffleCards(arr) {
@@ -148,16 +153,6 @@ function shuffleCards(arr) {
     return tmpArr
 }
 
-// function makeVisible (card) {
-//
-//     card.visible = true
-//     // console.log(deckOfCardsAfterShuffle)
-//     console.log(deckOfCardsGAME)
-//     render(gameBoard, deckOfCardsGAME)
-//     moves_clicks++
-//     // console.log(moves_clicks)
-// }
-
 
 function countVisibleCards() {
     var visibleCardsCount = deckOfCardsGAME.filter(function (el) {
@@ -168,41 +163,6 @@ function countVisibleCards() {
 }
 
 
-// function makeCompleted() {
-//     if (countVisibleCards() > 1) {
-//         var visibleCards = []
-//         var frontComplete = ''
-//
-//         function asd() {
-//             visibleCards = deckOfCardsGAME.filter(function (el) {
-//                 return el.visible == true
-//             })
-//         }
-//
-//         asd()
-//         if (visibleCards[0].front == visibleCards[1].front) {
-//             frontComplete = visibleCards[0].front
-//             console.log(frontComplete)
-//         }
-//         deckOfCardsGAME.forEach(function (card) {
-//             if (card.front == frontComplete) {
-//                 card.complete = true
-//             }
-//         })
-//     }
-// }
-
-
-//
-// function cardFront() {
-//
-//
-//
-
-//
-//     return false;
-// }
-
 function cardCompare() {
     var visibleCards = deckOfCardsGAME.filter(function (el) {
         return el.visible == true && el.complete == false
@@ -211,11 +171,14 @@ function cardCompare() {
     if (visibleCards.length == 2) {
         if (visibleCards[0].front === visibleCards[1].front) {
             console.log('match');
+            pairCount++
+            endGame()
 
-            deckOfCardsGAME = deckOfCardsGAME.map(function (card){
+            deckOfCardsGAME = deckOfCardsGAME.map(function (card) {
 
                 if (card.visible == true) {
                     card.complete = true
+
                     console.log(card)
                 }
 
@@ -223,58 +186,7 @@ function cardCompare() {
             })
         }
     }
-
-
-
-    // return deckOfCardsGAME
 }
-
-// function cardCompare(card ,frontComplete) {
-//     deckOfCardsGAME = deckOfCardsGAME.forEach(function (card) {
-//         if (card.front == frontComplete) return card.complete = true
-//     })
-//
-//     return deckOfCardsGAME
-// }
-
-
-// function visibleArray() {
-//     visibleCards = []
-//     visibleCards = deckOfCardsGAME.filter(function (el) {
-//         return el.visible == true
-//     })
-//     return visibleCards
-// }
-//
-// function cardFront() {
-//     var frontComplete = ''
-//     if (visibleCards[0].front == visibleCards[1].front) {
-//         frontComplete = visibleCards[0].front
-//     }
-//     return frontComplete
-// }
-//
-// function cardCompare(card ,frontComplete) {
-//     deckOfCardsGAME = deckOfCardsGAME.forEach(function (card) {
-//         if (card.front == frontComplete) return card.complete = true
-//     })
-//
-//     return deckOfCardsGAME
-// }
-
-// cardCompare (card, cardFront(visibleArray))
-
-// var visibleCards = []
-// function asd() {
-//     visibleCards = deckOfCardsGAME.filter(function (el) {
-//         return el.visible == true
-//     })
-// }
-//
-// var front_complite = ''
-// if (visibleCards[0].front == visibleCards[1].front) {var front_complite = visibleCards[0].front}
-//
-// deckOfCardsGAME.forEach(function(card) {if (card.front == front_complite) {card.complite = true}})
 
 
 function hideAllVisbleCards() {
@@ -299,8 +211,16 @@ function flipCard(index) {
     render()
 
     return deckOfCardsGAME
+
 }
 
+function endGame() {
+    if (pairCount == 4) {
+        alert('Level 1 completed. Time to level 2...')
+        render()
+    }
+
+}
 
 //FUNKCJE - KONIEC
 
@@ -310,4 +230,4 @@ function flipCard(index) {
 
 buttonStart()
 
-
+// endGame()
