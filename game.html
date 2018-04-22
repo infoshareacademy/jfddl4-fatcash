@@ -32,10 +32,8 @@
     </a>
     <ul class=" nav nav-pills d-none d-md-flex">
         <li class="nav-item"><a href="game.html" class="nav-link">FAT CASH-GRA</a></li>
-        <li class="nav-item"><a href="#features" class="nav-link">FUNKCJE</a></li>
-        <li class="nav-item"><a href="#info" class="nav-link">INFORMACJE</a></li>
-        <li class="nav-item"><a href="#team" class="nav-link">AUTORZY</a></li>
-        <li class="nav-item"><a href="#signup" class="nav-link">ZAPISZ SIĘ</a></li>
+        <li class="nav-item"><a href="index2.html" class="nav-link">POWRÓT DO STRONY GŁÓWNEJ</a></li>
+
 
     </ul>
 
@@ -48,11 +46,8 @@
         </label>
         <div class="slide-menu">
             <ul>
-                <li><a href="#hero">FAT CASH APLIKACJA</a></li>
-                <li><a href="#features">FUNKCJE</a></li>
-                <li><a href="#info">INFORMACJE</a></li>
-                <li><a href="#team">AUTORZY</a></li>
-                <li><a href="#signup">ZAPISZ SIĘ</a></li>
+                <li><a href="index2.html">POWRÓT DO STRONY GŁÓWNEJ</a></li>
+
             </ul>
 
         </div>
@@ -70,10 +65,72 @@
 
 <div id="game_option">
     <button id="start" class="btn btn-info">START</button>
-    <button id="instrukcja" class="btn btn-info">INSTRUKCJA</button>
-    <button id="wyniki" class="btn btn-info">NAJLEPSZE WYNIKI</button>
-    <button id="zamknij" class="btn btn-info">ZAMKNIJ</button>
+    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modalInstrukcja"id="instrukcja">INSTRUKCJA</button>
+    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modalWynik" id="wynik">NAJLEPSZE WYNIKI</button>
+
+
+
 </div>
+
+
+
+
+<!-- Modal Instrukcja -->
+<div class="modal fade" id="modalInstrukcja" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalInstrukcja2">Instrukcja Gry Memory FatCash</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Gra memory to doskonała zabawa dla osoby, która chce zacząć mądrze zarządzać pieniędzmi. Rozwija pamięć oraz uczy spostrzegawczości i koncentracji. </p>
+                    <ol>
+                        <li>Naciśnij przycisk Start i rozpocznij rozgrywkę.</li>
+                        <li>Z puli wymieszanych kart, klikając odkryj dwie karty z taką samą literką</li>
+                        <li>Jeśli odkryjesz parę kart tego samego typu pozostaną one na planszy w ramce koloru szarego</li>
+                        <li>Do przejścia masz dwa poziomy</li>
+                        <li>Spróbuj wygrać planszę z jak najmniejszą liczbą kliknięć - wygrywa osoba, która odnotowała najniższy wynik
+                        </li>
+                        <br>
+
+                    </ol>
+                <h3 class="text-center">DO DZIEŁA!!!</h3>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Instrukcja -->
+<div class="modal fade" id="modalWynik" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalWynik2">Najlepszy Wynik</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="modalScore">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
 
 
 <script src="js/gamescript.js"></script>

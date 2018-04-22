@@ -47,7 +47,7 @@
     min-height: 17%;
     box-sizing: border-box;
     margin: 10px;
-    font-size: 3rem;
+    font-size: 150%;
     text-align: center;
 }
 
@@ -60,7 +60,7 @@
     min-height: 17%;
     box-sizing: border-box;
     margin: 10px;
-    font-size: 3rem;
+    font-size: 150%;
     color: grey;
     text-align: center;
 }
@@ -92,7 +92,7 @@
     min-height: 10%;
     box-sizing: border-box;
     margin: 10px;
-    font-size: 1.5rem;
+    font-size: 100%;
     text-align: center;
 }
 
@@ -105,7 +105,7 @@
     min-height: 10%;
     box-sizing: border-box;
     margin: 10px;
-    font-size: 1.5rem;
+    font-size: 100%;
     color: grey;
     text-align: center;
 }
