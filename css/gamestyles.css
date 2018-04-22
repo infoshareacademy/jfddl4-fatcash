@@ -18,8 +18,10 @@
     height: 17%;
     min-width: 17%;
     min-height: 17%;
-    /*background: cornflowerblue;*/
-    background-image: url("img/wallet01.png");
+    /*background-color:#51c5c6;*/
+    background-image: url('../img/wallet01.png');
+    background-repeat: no-repeat;
+    background-size: contain;
     margin: 10px;
     cursor:pointer;
     box-sizing: border-box;
@@ -63,7 +65,9 @@
     height: 10%;
     min-width: 10%;
     min-height: 10%;
-    background: black;
+    background-image: url('../img/wallet01.png');
+    background-repeat: no-repeat;
+    background-size: contain;
     margin: 10px;
     cursor:pointer;
     box-sizing: border-box;
