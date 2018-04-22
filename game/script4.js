@@ -49,13 +49,6 @@ var deckOfCardsAfterShuffle = shuffleCards(deckOfCards)
 
 var deckOfCardsGAME = JSON.parse(JSON.stringify(deckOfCardsAfterShuffle))
 
-// function level() {
-//     if (pairCount <= 4) {
-//         deckOfCards = deckOfCards.slice(4)
-//     }
-//     return deckOfCards
-// }
-
 
 var pairCount = 0
 
@@ -67,17 +60,19 @@ var moves_clicks = 0
 
 //FUNKCJE
 
+
 function buttonStart() {
     document.getElementById('start')
         .addEventListener('click', function () {
             render();
+            // endGame()
         });
 
 
     document.getElementById('instrukcja')
         .addEventListener('click', function () {
-
-            console.log("Naciśnięto Instukcja");
+            // console.log("instrukcja");
+            levelup()
         });
 
 
@@ -172,7 +167,7 @@ function cardCompare() {
         if (visibleCards[0].front === visibleCards[1].front) {
             console.log('match');
             pairCount++
-            endGame()
+            endLevel()
 
             deckOfCardsGAME = deckOfCardsGAME.map(function (card) {
 
@@ -214,10 +209,13 @@ function flipCard(index) {
 
 }
 
-function endGame() {
+
+function endLevel() {
+
     if (pairCount == 4) {
+        levelup()
         alert('Level 1 completed. Time to level 2...')
-        render()
+
     }
 
 }
@@ -230,4 +228,4 @@ function endGame() {
 
 buttonStart()
 
-// endGame()
+
