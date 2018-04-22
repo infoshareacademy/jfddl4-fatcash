@@ -193,16 +193,19 @@ var gameBoard = document.getElementById('game-board-id')
 
 var deckOfCardsGAME = JSON.parse(JSON.stringify(deckOfCards))
 
-function cardsForLevel2 (){
+function cardsForLevel2() {
 
-deckOfCardsGAME = deckOfCards.concat(deckOfCardsLevel2)
+    deckOfCardsGAME = deckOfCards.concat(deckOfCardsLevel2)
 
 // deckOfCardsGAME = shuffleCards(deckOfCardsGAME)
 }
 
 var moves_clicks = 1
+var hs_counter = 0;
+
+
 function mouseClick() {
-    var clicks =document.getElementById("clicks").innerHTML = "Twoje ruchy: " + moves_clicks
+    var clicks = document.getElementById("clicks").innerHTML = "Twoje ruchy: " + moves_clicks
     moves_clicks++
 
 }
@@ -227,9 +230,9 @@ function buttonStart() {
 
 
     document.getElementById('wyniki')
-        .addEventListener('click', function () {
+        .addEventListener('click', function (x) {
 
-            console.log("Naciśnięto Wyniki");
+            checkScore()
         });
 
 
@@ -301,7 +304,6 @@ function createCardLevel2(card, i) {
                     mouseClick()
 
 
-
                 })
                 break
             case true:
@@ -322,10 +324,10 @@ function render(card, i) {
 }
 
 function renderLevel2(card, i) {
-if (level==2){
-    cardsForLevel2 ()
-    level++
-}
+    if (level == 2) {
+        cardsForLevel2()
+        level++
+    }
     gameBoard.innerHTML = ''
     deckOfCardsGAME.forEach(function (card, i) {
         gameBoard.appendChild(createCardLevel2(card, i))
@@ -401,7 +403,9 @@ function hideAllVisbleCards() {
 
 function flipCard(index) {
 
-    if (level===1) {
+    hs_counter++;
+
+    if (level === 1) {
         if (countVisibleCards() > 1) {
             hideAllVisbleCards()
         }
@@ -423,9 +427,8 @@ function flipCard(index) {
 }
 
 
-
-
 function endGame() {
+
 
     if (pairCount == deckOfCardsGAME.length / 2) {
         if (pairCount < 16) {
@@ -436,10 +439,49 @@ function endGame() {
             renderLevel2()
         }
         else
-            alert("ukończyłeś grę ! " + "Twój wynik to " + moves_clicks)
+            sendScore();
+        alert("ukończyłeś grę ! " + "Twój wynik to " + moves_clicks)
     }
 
 }
+
+
+/////////////////////////  HIGHSCORES  //////////////////////////////
+
+function sendScore() {
+
+    var bestScore = localStorage.getItem('bestscore');
+
+
+    if (hs_counter < bestScore || bestScore === null) {
+        localStorage.setItem('bestscore', hs_counter);
+
+    }
+}
+
+
+function checkScore() {
+
+
+    var bestScore = localStorage.getItem('bestscore');
+
+
+    if (bestScore === null) {
+
+        alert(" Upss. It seems there is no any highscores yet.")
+
+    }
+    else {
+
+        alert("Highscore: " + bestScore)
+
+    }
+
+}
+
+
+////////////////////////////////////////////////////////////////
+
 
 //FUNKCJE - KONIEC
 
