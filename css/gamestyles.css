@@ -1,0 +1,134 @@
+#game-board-id {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50vh;
+    height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+
+
+}
+
+
+
+#clicks{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.cardback {
+    width: 17%;
+    height: 17%;
+    min-width: 17%;
+    min-height: 17%;
+    /*background-color:#51c5c6;*/
+    background-image: url('../img/wallet01.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 10px;
+    cursor:pointer;
+    box-sizing: border-box;
+    font-size: 0.1rem;
+    position: relative;
+}
+
+.cardback > span {
+    display: none;
+}
+
+.cardfront {
+    background: white;
+    border: 2px solid red;
+    width: 17%;
+    height: 17%;
+    min-width: 17%;
+    min-height: 17%;
+    box-sizing: border-box;
+    margin: 10px;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.complete {
+    background: white;
+    border: 2px solid grey;
+    width: 17%;
+    height: 17%;
+    min-width: 17%;
+    min-height: 17%;
+    box-sizing: border-box;
+    margin: 10px;
+    font-size: 3rem;
+    color: grey;
+    text-align: center;
+}
+
+.cardback-l2 {
+    width: 10%;
+    height: 10%;
+    min-width: 10%;
+    min-height: 10%;
+    background-image: url('../img/wallet01.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 10px;
+    cursor:pointer;
+    box-sizing: border-box;
+    font-size: 0.1rem;
+}
+
+.cardback-l2 > span {
+    display: none;
+}
+
+.cardfront-l2 {
+    background: white;
+    border: 2px solid red;
+    width: 10%;
+    height: 10%;
+    min-width: 10%;
+    min-height: 10%;
+    box-sizing: border-box;
+    margin: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.complete-l2 {
+    background: white;
+    border: 2px solid grey;
+    width: 10%;
+    height: 10%;
+    min-width: 10%;
+    min-height: 10%;
+    box-sizing: border-box;
+    margin: 10px;
+    font-size: 1.5rem;
+    color: grey;
+    text-align: center;
+}
+
+
+
+
+
+/* Paweł Styles*/
+
+
+button {
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+
+#game_option
+{
+    display:flex;
+    justify-content: center;
+    width: 80vw;
+    margin:50px auto 50px auto;
+
+}
+
