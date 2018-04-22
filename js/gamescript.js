@@ -187,7 +187,7 @@ var deckOfCardsLevel2 = [
     }
 ]
 var gameBoard = document.getElementById('game-board-id')
-//
+
 // var deckOfCardsAfterShuffle = shuffleCards(deckOfCards)
 
 var deckOfCardsGAME = JSON.parse(JSON.stringify(deckOfCards))
@@ -196,14 +196,10 @@ function cardsForLevel2 (){
 
 deckOfCardsGAME = deckOfCards.concat(deckOfCardsLevel2)
 
-deckOfCardsGAME = shuffleCards(deckOfCardsGAME)}
+// deckOfCardsGAME = shuffleCards(deckOfCardsGAME)
+}
 
-// function level() {
-//     if (pairCount <= 4) {
-//         deckOfCards = deckOfCards.slice(4)
-//     }
-//     return deckOfCards
-// }
+
 
 var level = 1
 
@@ -211,11 +207,6 @@ var pairCount = 0
 
 var moves_clicks = 0
 
-// var visibleCards = []
-
-// ZMIENNE -KONIEC
-
-//FUNKCJE
 
 function buttonStart() {
     document.getElementById('start')
