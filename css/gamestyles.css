@@ -39,6 +39,9 @@
 }
 
 .cardfront {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: white;
     border: 2px solid red;
     width: 17%;
@@ -47,11 +50,14 @@
     min-height: 17%;
     box-sizing: border-box;
     margin: 3%;
-    font-size: 150%;
+    font-size: 200%;
     text-align: center;
 }
 
 .complete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: white;
     border: 2px solid grey;
     width: 17%;
@@ -60,7 +66,7 @@
     min-height: 17%;
     box-sizing: border-box;
     margin: 3%;
-    font-size: 150%;
+    font-size: 200%;
     color: grey;
     text-align: center;
 }
@@ -84,6 +90,9 @@
 }
 
 .cardfront-l2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: white;
     border: 2px solid red;
     width: 10%;
@@ -97,6 +106,9 @@
 }
 
 .complete-l2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: white;
     border: 2px solid grey;
     width: 10%;
