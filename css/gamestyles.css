@@ -27,7 +27,7 @@
     background-image: url('../img/wallet01.png');
     background-repeat: no-repeat;
     background-size: contain;
-    margin: 10px;
+    margin: 3%;
     cursor:pointer;
     box-sizing: border-box;
     font-size: 0.1rem;
@@ -46,7 +46,7 @@
     min-width: 17%;
     min-height: 17%;
     box-sizing: border-box;
-    margin: 10px;
+    margin: 3%;
     font-size: 150%;
     text-align: center;
 }
@@ -59,7 +59,7 @@
     min-width: 17%;
     min-height: 17%;
     box-sizing: border-box;
-    margin: 10px;
+    margin: 3%;
     font-size: 150%;
     color: grey;
     text-align: center;
@@ -73,7 +73,7 @@
     background-image: url('../img/wallet01.png');
     background-repeat: no-repeat;
     background-size: contain;
-    margin: 10px;
+    margin: 3%;
     cursor:pointer;
     box-sizing: border-box;
     font-size: 0.1rem;
@@ -91,7 +91,7 @@
     min-width: 10%;
     min-height: 10%;
     box-sizing: border-box;
-    margin: 10px;
+    margin: 3%;
     font-size: 100%;
     text-align: center;
 }
@@ -104,7 +104,7 @@
     min-width: 10%;
     min-height: 10%;
     box-sizing: border-box;
-    margin: 10px;
+    margin: 3%;
     font-size: 100%;
     color: grey;
     text-align: center;
