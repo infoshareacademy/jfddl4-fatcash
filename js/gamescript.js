@@ -189,6 +189,7 @@ var deckOfCardsLevel2 = [
 var modalScore = document.getElementById("modalScore")
 var gameBoard = document.getElementById('game-board-id')
 
+
 var deckOfCardsAfterShuffle = shuffleCards(deckOfCards)
 
 var deckOfCardsGAME = JSON.parse(JSON.stringify(deckOfCardsAfterShuffle))
